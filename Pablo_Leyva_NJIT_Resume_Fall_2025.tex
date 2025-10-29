@@ -1,4 +1,3 @@
-%-------------------------
 % Resume in Latex
 % Author : Jake Gutierrez
 % Based off of: https://github.com/sb2nov/resume
@@ -165,18 +164,31 @@
 %     \resumeItemListEnd
 %    \resumeSubHeadingListEnd
 %------------------------------------------- 
+
     \resumeSubheading
-        {Undergrad Research and Innovation (URI) - Beyond Next-Token Prediction}{Sep 2025 -- Present}
+        {Undergrad Researher  (CAHSI) - Multilingual LLM Training and Bias Analysis}{October 2025 -- Present}
             {Research Candidate}{Newark, NJ}
             \resumeItemListStart
-            \resumeItem{Developing a novel LLM paradigm that reframes training from next-token prediction toward intent-inference, enabling models to generate clarifying questions as intermediate reasoning steps.}
-            \resumeItem{Engineering transformer-based modifications and evaluation pipelines to support interactive, question-driven architectures, with metrics focused on reducing hallucinations and improving task accuracy.}
+            \resumeItem{Build and train a \textbf{foundational multilingual model} on Spanish, Portuguese, Italian, Farsi, and Arabic, with the primary objective of enabling the model to "think" and reason in native languages rather than through translation}
+            \resumeItem{Compare and analyze \textbf{bias patterns} between models trained exclusively in English versus multilingual models trained on diverse language corpora to evaluate cultural and linguistic bias disparities}
+            \resumeItem{Train specialized \textbf{Small Language Models (SLMs)} on individual target languages and benchmark performance against a foundational multilingual LLM to \textbf{compare efficiency} (latency, memory, energy consumption) versus \textbf{accuracy tradeoffs} between SLMs and LLMs}
+            \resumeItem{Apply \textbf{research techniques} and \textbf{algorithm design} to evaluate model performance across multilingual tasks, measuring both computational efficiency and linguistic fidelity in native language reasoning}
+        \resumeItemListEnd
+
+    \resumeSubheading
+        {Undergrad Research and Innovation (URI) - Efficient SLM for Agentic Workflows}{Sep 2025 -- Present}
+            {Research Candidate}{Newark, NJ}
+            \resumeItemListStart
+            \resumeItem{Apply \textbf{research techniques} and \textbf{algorithm} design to develop an AFM-style 3B parameter SLM architecture compatible with BitNet b1.58 ternary weights}
+            \resumeItem{Integrate lightweight adapter layers (e.g., LoRA) to specialize the model for structured business workflows}
+            \resumeItem{Evaluate the agentic reliability of the model in executing long, deterministic step-by-step tasks vs. larger LLM baselines}
+            \resumeItem{Benchmark on-device performance (latency, memory, energy) to \textbf{improve performance} and demonstrate feasibility on consumer hardware}
         \resumeItemListEnd
 
 
     \resumeSubheading
         {Apple}{May 2025 -- August 2025}
-      {AIML Intern, Software Engineer Intern}{Cupertino, CA}
+      {AIML Product Engineering Intern}{Cupertino, CA}
       \resumeItemListStart
 
         \resumeItem{Led a team of 3 interns to build MVP for Agentic Payment flow experience for higher leadership at Apple Pay}
@@ -186,7 +198,7 @@
         \resumeItem{Used\textbf{ LangChain \& LangGraph} to facilitate agent infrastructure and validation}
 
         \resumeItem{Led the design and evaluation of a Graph-RAG architecture to enhance knowledge discovery and information relevance
-across partner use cases, focused on \textbf{Partner Facing RAG ChatBot}}
+across partner use cases, focused on \textbf{Partner Facing RAG ChatBot} to improve business insights and decision making}
         
         \resumeItemListEnd
 
@@ -205,22 +217,27 @@ across partner use cases, focused on \textbf{Partner Facing RAG ChatBot}}
 \section{Projects}
     
     \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+    {\textbf{Princeton Hackathon - NeuroCache } $|$ \emph{WebGPU, Transformers.js, WebAssembly, PyTorch, CoreML / MLX} $|$ \textbf{Python}}{}
+      \resumeItemListStart
+      \resumeItem{Architected \textbf{browser-based inference system} using Web LLM and WebAssembly to deploy quantized SLMs (Phi-3.5-mini, TinyLlama) for on-device computation, eliminating server dependencies and achieving sub-second latency through WebGPU acceleration}
+      \resumeItem{Implemented \textbf{custom KV-cache manipulation layer} enabling selective memory retention/eviction, dynamic context compression via attention-based importance scoring, and memory slot management for persistent information storage across conversation sessions}
+      \resumeItem{Designed \textbf{advanced context control mechanisms} including cache-level RAG injection, custom attention patterns (sliding window, sparse attention), and dynamic cache zone management for fine-grained conversation context control and privacy-preserving forget operations}
+    \resumeItemListEnd
+
+    \vspace{20pt}
     
     \resumeProjectHeading
     {\textbf{GroupGPT – Collaborative Ideation Platform} $|$ \emph{Next.js, Supabase, Socket.IO, OpenAI API} $|$ \textbf{Python, JavaScript}}{}
-  \resumeItemListStart
+  \resumeItemListStart 
     \resumeItem{Built and prototyped a collaborative chat interface with Next.js and Supabase Realtime, allowing multiple users to contribute simultaneously to a persistent conversation thread}
     \resumeItem{Integrated OpenAI’s GPT models with conversation memory to provide context-aware summarization, clustering of ideas, and automated agenda generation}
     \resumeItem{Explored agentic design patterns to support role-specific AI assistants (e.g., Sponsorship Agent, Logistics Agent), showcasing use cases in \textbf{real-time conversational AI}, \textbf{context-aware agent workflows}, and \textbf{deploying Large-driven features in user-facing apps}}
   \resumeItemListEnd
-    \vspace{-10pt}
-      \resumeProjectHeading
-         {\textbf{NYU Hackathon (1st Place) - QuSotch} $|$ \emph{Numpy, scikit-learn, Pandas, Quantum Circuits} $|$ \textbf{Python}}{}
-          \resumeItemListStart
-           \resumeItem{Explored alternative quantum algorithms (Quantum Walks, Grover’s Search) to further \textbf{optimize computational performance} for financial modeling}
-           \resumeItem{\textbf{Reduced} computational \textbf{complexity} by roughly\textbf{ 75\% }compared to classical Monte Carlo methods by implementing Quantum Monte Carlo (QMC) with parallelized stochastic modeling}
-          \resumeItemListEnd
 
+  \vspace{-10pt}
+    
         \resumeProjectHeading
         {\textbf{Princeton Hackathon - Illume} $|$ \emph{Python, Google Gemini, Pytest, Docker, Kubernetes, Poetry } $|$ \textbf{Python}}{}
           \resumeItemListStart
@@ -245,7 +262,7 @@ across partner use cases, focused on \textbf{Partner Facing RAG ChatBot}}
             \resumeItem{Running transcription on CPU and Translations and TTS on GPU to optimize and accelerate inference }
           \resumeItemListEnd
 
-
+       
           
     \resumeSubHeadingListEnd
 
@@ -262,8 +279,8 @@ across partner use cases, focused on \textbf{Partner Facing RAG ChatBot}}
       {Co-Founder}{Sep 2024 -- Present}
       {Association of Latino Professionals For America (ALPFA)}{Newark, NJ}
       \resumeItemListStart
-        \resumeItem{Collaborated to start the first professional latino organization on campus for non-engineering students}
-        \resumeItem{Started the external partners affairs network with local ALPFA chapters and companies}
+        \resumeItem{Collaborated confidently to start the first professional latino organization on campus for non-engineering students, demonstrating ability to work independently}
+        \resumeItem{Started the external partners affairs network with local ALPFA chapters and companies through articulate networking and intuitive relationship building}
         
       \resumeItemListEnd
 
@@ -272,9 +289,9 @@ across partner use cases, focused on \textbf{Partner Facing RAG ChatBot}}
       {President}{March 2025 -- Present}
       {Society of Hispanic Professional Engineers (SHPE)}{Newark, NJ}
       \resumeItemListStart
-        \resumeItem{Built CLARA - AI Assistant to help with organization operpations including email management, event planning, outeach, marketing and everything in between}
-        \resumeItem{Leading team of 20 to organize professional development events for a memberbase of 300 + across campus}
-        \resumeItem{2x the number of students getting interviews and internships for the latino community}
+        \resumeItem{Built CLARA - AI Assistant to help with organization operations including email management, event planning, outreach, marketing and everything in between, working independently to deliver intuitive solutions}
+        \resumeItem{Confidently leading team of 20 to organize professional development events for a memberbase of 300 + across campus using articulate communication}
+        \resumeItem{Articulated strategic vision to 2x the number of students getting interviews and internships for the latino community through confident mentorship}
         \resumeItem{Raised \$70,000 capital for the organization to take 100 students to the national conference and operate independently of the university}
       \resumeItemListEnd
 
@@ -283,11 +300,11 @@ across partner use cases, focused on \textbf{Partner Facing RAG ChatBot}}
       {Vice President - External Affairs}{May 2024 -- March 2025}
       {Society of Hispanic Professional Engineers (SHPE)}{Newark, NJ}
       \resumeItemListStart
-        \resumeItem{Grew our External Organizations and Company connection by 6x in only two months}
-        \resumeItem{Currently leading and managing a team of 13 to organize 60+ events and social events a semester to bring social and professional enrichment to our member base of 300+ students}
-        \resumeItem{Successfully breaking attendance records on a weekly basis by averaging 200\% growth in member engagement}
+        \resumeItem{Grew our External Organizations and Company connection by 6x in only two months through confident outreach, working independently to identify partnerships}
+        \resumeItem{Currently leading and managing a team of 13 to organize 60+ events and social events a semester to bring social and professional enrichment to our member base of 300+ students using intuitive planning}
+        \resumeItem{Successfully breaking attendance records on a weekly basis by averaging 200\% growth in member engagement through articulate event promotion}
         \resumeItem{Started Webmaster position for NJIT SHPE yielding 81\% growth in CS student participation}
-        \resumeItem{Started SHPEtina position for NJIT SHPE yielding 43\% growth in Latina student participation}
+        \resumeItem{Started SHPEtina position for NJIT SHPE yielding 43\% growth in Latina student participation through intuitive programming}
         \resumeItem{Initiated mentorship program where up to 20+ students learned from the experience of the Executive Board}
         \resumeItem{Established relationships with exterior clubs from local universities to unite the Latino community in NJ/NYC area}
       \resumeItemListEnd
@@ -297,11 +314,13 @@ across partner use cases, focused on \textbf{Partner Facing RAG ChatBot}}
       {Event Coordinator}{Oct 2024 -- May 2024}
       {Society of Hispanic Professional Engineers (SHPE)}{Newark, NJ}
       \resumeItemListStart
-        \resumeItem{Organize commodities such as food and workshops resulting in an average of 65 + student involvement}
+        \resumeItem{Organize commodities such as food and workshops resulting in an average of 65 + student involvement, working independently on logistics}
         \resumeItem{Collaboratively work with a team of 12 to successfully leading SHPE to be the largest student organization on campus}
         \resumeItem{Run weekly events yielding NJIT SHPE to receive many accolades and be recognized by the Governor of Newark}
      \resumeItemListEnd
      
     \resumeSubHeadingListEnd
 \vspace{-10pt}
+\end{document}
+\end{document}
 \end{document}
