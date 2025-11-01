@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.20)  29 OCT 2025 08:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.20)  31 OCT 2025 09:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -363,26 +363,32 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 3.60004pt, for example:
 (fancyhdr)                \setlength{\footskip}{3.60004pt}.
 
-[2] (./Pablo_Leyva_NJIT_Resume_Fall_2025.aux)
+[2]
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 3.60004pt, for example:
+(fancyhdr)                \setlength{\footskip}{3.60004pt}.
+
+[3] (./Pablo_Leyva_NJIT_Resume_Fall_2025.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Pablo_Leyva_NJIT_Resume_Fall_2025.out' has not changed.
-(rerunfilecheck)             Checksum: 89C1543F88B17262A305A53B7B260959;526.
+(rerunfilecheck)             Checksum: 25F9977DEFB90FF4EAC2F4FC4BE650A7;526.
  ) 
 Here is how much of TeX's memory you used:
- 10746 strings out of 480247
- 169753 string characters out of 5896151
- 511383 words of memory out of 5000000
+ 10747 strings out of 480247
+ 169759 string characters out of 5896151
+ 501383 words of memory out of 5000000
  28557 multiletter control sequences out of 15000+600000
  474165 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,11n,63p,391b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,11n,63p,391b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/pleyva/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Pablo_Leyva_NJIT_Resume_Fall_2025.pdf (2 pages, 149462 bytes).
+Output written on Pablo_Leyva_NJIT_Resume_Fall_2025.pdf (3 pages, 149919 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
+ 98 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
