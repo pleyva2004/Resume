@@ -150,48 +150,41 @@
  \end{itemize}
 \vspace{-12pt}
 
-
 %-----------PROJECTS-----------
 \section{Projects}
 
     \vspace{5pt}
     \resumeSubHeadingListStart
 
-    \resumeProjectHeading
-    {\textbf{ Liquid Neural Networks } $|$ \emph{PyTorch, CUDA, Python}}{}
-      
-      \vspace{5pt}
-      \resumeItemListStart
-      \resumeItem{Developed a Liquid Neural Network (LNN) from scratch to explore efficient, continuous-time architectures for \textbf{Computer Vision}}
-      \resumeItem{Benchmarked the custom LNN on \textbf{CIFAR-10 outperforming recurrent baselines} in temporal stability and robustness to frame-rate irregularities in simulated driving environments}
-    
-      \resumeItemListEnd
-    
-    \vspace{5pt}
-    \resumeProjectHeading
-    {\textbf{Predictive Visual Motion Modeling for Crowd Flow Analysis} $|$ \emph{PyTorch, OpenCV, Numba, Python}}{}
-      
-      \vspace{5pt}
-      \resumeItemListStart
-      \resumeItem{Engineered a real-time \textbf{computer vision pipeline} to model and forecast pedestrian trajectories using YOLOv5 detection, Kalman filtering, and LSTM-based temporal modeling}
-      \resumeItem{Designed a \textbf{custom motion-smooth loss function} combining MSE and directional regularization; optimized preprocessing with sparse optical flow to reduce latency by 40\%}
-    
-    \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{Alpha Signal Research \& Backtesting Engine} $|$ \emph{Python, NumPy, Pandas, Statsmodels, Matplotlib}}{}
+            \vspace{5pt}
+            \resumeItemListStart
+                \resumeItem{Developed a modular \textbf{backtesting framework} to evaluate 20+ alpha signals using equities and macroeconomic data with custom factor modeling.}
+                \resumeItem{Implemented \textbf{statistical testing and time-series forecasting} to identify signal persistence, achieving a 1.47 Sharpe ratio under realistic transaction costs.}
+                \resumeItem{Automated \textbf{portfolio rebalancing and risk scaling} for systematic strategy simulation using historical data from Quandl and Yahoo Finance APIs.}
+            \resumeItemListEnd
 
-    \vspace{5pt}
-    \resumeProjectHeading
-    {\textbf{3D Scene Reconstruction and Object Association from Multi-View Feeds} $|$ \emph{C++, OpenCV, Eigen, Python}}{}
-      
-      \vspace{5pt}
-      \resumeItemListStart
-      \resumeItem{Developed a multi-view geometry system to reconstruct \textbf{3D object positions} via ORB feature extraction, BFMatcher correspondence, and epipolar-based triangulation}
-      \resumeItem{Implemented nonlinear \textbf{bundle adjustment} using the Levenberg–Marquardt algorithm and spatial hashing for memory-optimized 3D reconstruction}
-      \resumeItem{Delivered sub-10 cm spatial accuracy and a 2.5× speedup through \textbf{vectorized NumPy/Eigen operations} and modular C++/Python integration}
-    
-    \resumeItemListEnd
+        \vspace{5pt}
+        \resumeProjectHeading
+        {\textbf{Machine Learning–Driven Portfolio Optimization} $|$ \emph{Python, Scikit-learn, CVXPY, PyTorch, Pandas}}{}
+            \vspace{5pt}
+            \resumeItemListStart
+                \resumeItem{Built a \textbf{reinforcement learning–inspired optimizer} for dynamic asset allocation using predicted returns and risk covariance modeling.}
+                \resumeItem{Applied \textbf{convex optimization (CVXPY)} under Sharpe and drawdown constraints, outperforming mean-variance baselines by 12\% annualized returns.}
+                \resumeItem{Trained \textbf{LSTM-based predictors} for multi-asset returns to inform adaptive portfolio rebalancing and volatility-aware decision-making.}
+        \resumeItemListEnd
 
-   
-          
+        \vspace{5pt}
+        \resumeProjectHeading
+        {\textbf{Market Microstructure Simulator \& Statistical Arbitrage System} $|$ \emph{Python, NumPy, SciPy, Plotly, FastAPI}}{}
+            \vspace{5pt}
+            \resumeItemListStart
+                \resumeItem{Designed a synthetic \textbf{order book simulator} using Poisson processes to replicate trade arrival, liquidity imbalance, and order matching behavior.}
+                \resumeItem{Applied \textbf{co-integration and mean reversion models} for identifying arbitrage pairs with over 60\% backtested profitability across simulated markets.}
+                \resumeItem{Developed a \textbf{FastAPI dashboard} to visualize live PnL trajectories, signal confidence, and latency-adjusted execution metrics.}
+        \resumeItemListEnd
+
     \resumeSubHeadingListEnd
 
 

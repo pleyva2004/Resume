@@ -1,10 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1762221632 "/home/pleyva/Resume/Pablo_Leyva_NJIT_Resume_Fall_2025_AV.tex" "Pablo_Leyva_NJIT_Resume_Fall_2025_AV.pdf" "Pablo_Leyva_NJIT_Resume_Fall_2025_AV" 1762221633
+["pdflatex"] 1762221739 "/home/pleyva/Resume/Pablo_Leyva_Quant.tex" "Pablo_Leyva_Quant.pdf" "Pablo_Leyva_Quant" 1762221739
   "/etc/texmf/web2c/texmf.cnf" 1758385371 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/pleyva/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk" 1759029256 10448 5af8fcf2b322898f7959a1cc5e610414 ""
-  "/home/pleyva/Resume/Pablo_Leyva_NJIT_Resume_Fall_2025_AV.tex" 1762221630 10194 1616ad358b36bbb5a2214ac6e70c4b0e ""
+  "/home/pleyva/Resume/Pablo_Leyva_Quant.tex" 1762221739 10614 e6f15d704d12874c9edd7e3aa0cc0b55 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm" 1136768653 1536 c4f439db76ef96a9c53bc437f35ffe20 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm" 1136768653 1328 5442e22a7072966dbaf88ca900acf3f0 ""
@@ -90,11 +88,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1758385551 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1758385554 1405644 8f38c36bc821647c50f3a30c3fa63e15 ""
-  "Pablo_Leyva_NJIT_Resume_Fall_2025_AV.aux" 1762221633 1312 7343dfd0478c77269236f414dac0e6cd "pdflatex"
-  "Pablo_Leyva_NJIT_Resume_Fall_2025_AV.out" 1762221633 526 fd61d205ecf07375781686e505a1fd5b "pdflatex"
-  "Pablo_Leyva_NJIT_Resume_Fall_2025_AV.tex" 1762221630 10194 1616ad358b36bbb5a2214ac6e70c4b0e ""
+  "Pablo_Leyva_Quant.aux" 1762221739 1312 7343dfd0478c77269236f414dac0e6cd "pdflatex"
+  "Pablo_Leyva_Quant.out" 1762221739 526 fd61d205ecf07375781686e505a1fd5b "pdflatex"
+  "Pablo_Leyva_Quant.tex" 1762221739 10614 e6f15d704d12874c9edd7e3aa0cc0b55 ""
   (generated)
-  "Pablo_Leyva_NJIT_Resume_Fall_2025_AV.aux"
-  "Pablo_Leyva_NJIT_Resume_Fall_2025_AV.log"
-  "Pablo_Leyva_NJIT_Resume_Fall_2025_AV.out"
-  "Pablo_Leyva_NJIT_Resume_Fall_2025_AV.pdf"
+  "Pablo_Leyva_Quant.aux"
+  "Pablo_Leyva_Quant.log"
+  "Pablo_Leyva_Quant.out"
+  "Pablo_Leyva_Quant.pdf"
