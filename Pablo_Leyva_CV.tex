@@ -1,0 +1,386 @@
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+%\addtolength{\topmargin}{-.8in}
+%\addtolength{\textheight}{1.0in}
+\usepackage[right=0.6cm, top=0.6cm, left=0.6cm, bottom=0.6cm]{geometry}
+
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - reduce spacing
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Pablo Leyva} \\ \vspace{1pt}
+    \small 908-525-6062 $|$ \href{mailto:x@x.com}{\underline{pl33@njit.edu}} $|$
+    \href{https://linkedin.com/in/pablo-leyva}{\underline{linkedin.com/in/pablo-leyva}} $|$
+    \href{https://github.com/pleyva2004}{\underline{github.com/pleyva2004}} $|$
+    \href{pabloleyva.io}{\underline{pabloleyva.io}}
+\end{center}
+\vspace{-12pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+\vspace{10pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New Jersey Institute of Technology}{Newark, NJ}
+      {B.S. in Applied Mathematics \& Computer Science }{Aug 2023 -- May 2027}
+        \vspace{10pt}
+        \begin{itemize}[leftmargin=0.15in, itemsep=3pt, label={}]
+            \small\item{
+                \textbf{Relevant Coursework}: \newline Data Structures \& Algorithms, Computer Vision, Linear Algebra, Probability \& Statistics, Database Systems, Software Engineering, Calculus III, Numerical Methods, Objected Oriented Programming, \textbf{Deep Learning PhD Coursework}}
+        \end{itemize}
+
+          \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  \vspace{20pt}
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+        {Undergrad Researher  (CAHSI) - Multilingual LLM Training and Bias Analysis}{October 2025 -- Present}
+            {Research Candidate}{Newark, NJ}
+            \resumeItemListStart
+            \vspace{10pt}
+                \resumeItem{Build and train a \textbf{foundational multilingual model} on Spanish, Portuguese, Italian, Farsi, and Arabic, with the primary objective of enabling the model to "think" and reason in native languages rather than through translation}
+            \vspace{5pt}
+                \resumeItem{Compare and analyze \textbf{bias patterns} between models trained exclusively in English versus multilingual models trained on diverse language corpora to evaluate cultural and linguistic bias disparities}
+            \vspace{5pt}
+                \resumeItem{Train specialized \textbf{Small Language Models (SLMs)} on individual target languages and benchmark performance against a foundational multilingual LLM to \textbf{compare efficiency} (latency, memory, energy consumption) versus \textbf{accuracy tradeoffs} between SLMs and LLMs}
+            \vspace{5pt}
+                \resumeItem{Apply \textbf{research techniques} and \textbf{algorithm design} to evaluate model performance across multilingual tasks, measuring both computational efficiency and linguistic fidelity in native language reasoning}
+        \resumeItemListEnd
+    \vspace{10pt}
+
+    \resumeSubheading
+        {Undergrad Research and Innovation (URI) - Efficient SLM for Agentic Workflows}{Sep 2025 -- Present}
+            {Research Candidate}{Newark, NJ}
+            \resumeItemListStart
+            \vspace{10pt}
+                \resumeItem{Apply \textbf{research techniques} and \textbf{algorithm} design to develop an AFM-style 3B parameter SLM architecture compatible with BitNet b1.58 ternary weights}
+            \vspace{5pt}
+                \resumeItem{Integrate lightweight adapter layers (e.g., LoRA) to specialize the model for structured business workflows}
+            \vspace{5pt}
+                \resumeItem{Evaluate the agentic reliability of the model in executing long, deterministic step-by-step tasks vs. larger LLM baselines}
+            \vspace{5pt}
+                \resumeItem{Benchmark on-device performance (latency, memory, energy) to \textbf{improve performance} and demonstrate feasibility on consumer hardware}
+        \resumeItemListEnd
+    \vspace{10pt}
+
+    \resumeSubheading
+        {Apple}{May 2025 -- August 2025}
+      {AIML Product Engineering Intern}{Cupertino, CA}
+      \resumeItemListStart
+        \vspace{10pt}
+            \resumeItem{Led a team of 3 interns to build MVP for Agentic Payment flow experience for higher leadership at Apple Pay}
+        \vspace{5pt}
+            \resumeItem{Prototyped agent workflows combining    \textbf{Large Language Model(LLM)-based product} recommendations with Apple Pay checkout experiences, leveraging Typescript to implement Model Context Protocol (MCP) for merchant catalog parsing and transactional automation }
+        \vspace{5pt}
+            \resumeItem{Used\textbf{ LangChain \& LangGraph} to facilitate agent infrastructure and validation}
+        \vspace{5pt}
+            \resumeItem{Led the design and evaluation of a Graph-RAG architecture to enhance knowledge discovery and information relevance
+across partner use cases, focused on \textbf{Partner Facing RAG ChatBot} to improve business insights and decision making}
+        \vspace{5pt}
+        \resumeItemListEnd
+
+    \vspace{10pt}
+    \resumeSubheading
+      {Caterpillar Inc.}{May 2024 -- August 2024}
+      {Software Engineering Intern}{Remote}
+      \resumeItemListStart
+        \vspace{10pt}
+        \resumeItem{Analyzed the efficiency of software development within the company by utilizing Generative artificial intelligence(AI) to assess the impact and usability of code commits }
+        \vspace{5pt}
+        \resumeItem{Optimized the Software Development Life Cycle (SDLC) by implementing data visualization dashboards that tracked code quality metrics, sprint velocity, and deployment frequency, applying Agile methodologies and DevOps best practices to improve team productivity and code maintainability}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+    \newpage
+    %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\vspace{10pt}
+\begin{itemize}[leftmargin=0.15in, itemsep=0pt, label={}]
+   \small{\item{
+    \textbf{Languages }{: Python, Typescript, JavaScript, Java, C++} \\
+    \vspace{5pt}
+    \textbf{Frameworks }{: React, NEXT.JS , Node, PyTorch, TensorFlow, scikit-learn, LangChain, LangGraph, MCP } \\
+    \vspace{5pt}
+    \textbf{Libraries }{: Jupyter Notebook, Pandas, NumPy, Pytest, scipy,FastAPI, Flask } \\
+    \vspace{5pt}
+    \textbf{Machine Learning }{: Linear Regression,  Logistic Regression, K-Means Clustering, K-Nearest Neighbors (KNN)} \\
+    \vspace{5pt}
+    \textbf{AI/ML }{: Natural Language Processing (NLP), Neural Networks (DNN, CNN, RNN), Deep Learning, Reinforcement Learning} \\
+    \vspace{5pt}
+    \textbf{MLOps }{: Model Deployment, Data Pipelines, Docker, CI/CD, AWS, GCP, Azure, GitHub Actions, linux, kubernetes, unix}
+   }}
+\end{itemize}
+\vspace{-5pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+    \resumeSubHeadingListStart
+    \vspace{10pt}
+    \resumeProjectHeading
+        {\textbf{Princeton Hackathon - NeuroCache } $|$ \emph{WebGPU, Transformers.js, WebAssembly, llama\_cpp} $|$ \textbf{C++}}{}
+      \resumeItemListStart
+      \vspace{10pt}
+      \resumeItem{Architected \textbf{browser-based inference system} using Web LLM and WebAssembly to deploy quantized SLMs (Qwen2.5-1.5B, llama3.2-3b) for on-device computation, eliminating server dependencies and achieving sub-second latency through WebGPU acceleration}
+      \vspace{5pt}
+      \resumeItem{Implemented \textbf{custom KV-cache manipulation layer} enabling selective memory retention/eviction, dynamic context compression via attention-based importance scoring, and memory slot management for persistent information storage across conversation sessions, through custom llama\_cpp function calling and memory management}
+      \vspace{5pt}
+      \resumeItem{Designed \textbf{advanced context control mechanisms} including cache-level RAG injection, custom attention patterns (sliding window, sparse attention), and dynamic cache zone management for fine-grained conversation context control and privacy-preserving forget operations}
+    \resumeItemListEnd
+
+    \vspace{20pt}
+
+    \resumeProjectHeading
+    {\textbf{GroupGPT – Collaborative Ideation Platform} $|$ \emph{Next.js, Supabase, Socket.IO, OpenAI API} $|$ \textbf{Python, JavaScript}}{}
+  \resumeItemListStart
+  \vspace{10pt}
+    \resumeItem{Built and prototyped a collaborative chat interface with Next.js and Supabase Realtime, allowing multiple users to contribute simultaneously to a persistent conversation thread}
+    \vspace{5pt}
+    \resumeItem{Integrated OpenAI’s GPT models with conversation memory to provide context-aware summarization, clustering of ideas, and automated agenda generation}
+    \vspace{5pt}
+    \resumeItem{Explored agentic design patterns to support role-specific AI assistants (e.g., Sponsorship Agent, Logistics Agent), showcasing use cases in \textbf{real-time conversational AI}, \textbf{context-aware agent workflows}, and \textbf{deploying Large-driven features in user-facing apps}}
+  \resumeItemListEnd
+
+  \vspace{20pt}
+
+        \resumeProjectHeading
+        {\textbf{Princeton Hackathon - Illume} $|$ \emph{Python, Google Gemini, Pytest, Docker, Kubernetes, Poetry } $|$ \textbf{Python}}{}
+          \resumeItemListStart
+          \vspace{5pt}
+           \resumeItem{Implemented unit and integration tests with Pytest to validate RAG pipelines, data ingestion, and multi-modal input handling}
+           \vspace{5pt}
+           \resumeItem{Documented AI modules, \textbf{API endpoints}, and deployment workflows to ensure smooth on boarding for contributors and maintain scalability}
+           \vspace{5pt}
+           \resumeItem{Led deployment using \textbf{Docker and Kubernetes}, ensuring a reproducible and stable environment for multi-service AI applications}
+          \resumeItemListEnd
+
+        \vspace{20pt}
+        \resumeProjectHeading
+            {\textbf{Emotion-Aware Music Recommendation System} $|$ \emph{PyTorch, BERT, librosa, Spotify API, Flask} $|$ \textbf{Python}}{}
+          \resumeItemListStart
+          \vspace{10pt}
+           \resumeItem{Architected \textbf{multi-modal deep learning pipeline} with separate CNN branches for mel-spectrogram analysis, BERT transformers for lyrics sentiment processing, and embedding layers for metadata fusion}
+           \vspace{5pt}
+           \resumeItem{Implemented \textbf{late-fusion neural architecture} combining audio, text, and metadata features through fully-connected layers, achieving emotion/genre classification for sequential recommendation modeling using Transformer encoders}
+          \vspace{5pt}
+          \resumeItem{Deployed end-to-end system with \textbf{Seq2Seq prediction model} for next-song recommendations, integrated with Spotify, Last.fm, and Genius APIs, featuring real-time mood trajectory visualization and personalized playlist generation}
+          \vspace{5pt}
+          \resumeItemListEnd
+
+        \vspace{20pt}
+        \resumeProjectHeading
+          {\textbf{Business - Live Translation} $|$ \emph{bash, Docker, NVIDIA NIM} $|$ \textbf{Python}}{}
+          \resumeItemListStart
+          \vspace{10pt}
+           \resumeItem{Utilizing Open AI's faster-whisper Large model to perform live speech transcription with \textbf{84\% accuracy}}
+           \vspace{5pt}
+            \resumeItem{Implementing \textbf{multi-threading }to run the transcription and translation in parallel }
+            \vspace{5pt}
+            \resumeItem{Running transcription on CPU and Translations and TTS on GPU to optimize and accelerate inference }
+            \vspace{5pt}
+          \resumeItemListEnd
+
+
+
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+
+\section{Community Outreach}
+
+    \resumeSubHeadingListStart
+
+    \vspace{20pt}
+    \resumeSubheading
+      {Co-Founder}{Sep 2024 -- Present}
+      {Association of Latino Professionals For America (ALPFA)}{Newark, NJ}
+      \resumeItemListStart
+        \vspace{10pt}
+        \resumeItem{Collaborated confidently to start the first professional latino organization on campus for non-engineering students, demonstrating ability to work independently}
+        \vspace{5pt}
+        \resumeItem{Started the external partners affairs network with local ALPFA chapters and companies through articulate networking and intuitive relationship building}
+        \vspace{5pt}
+
+      \resumeItemListEnd
+
+      \vspace{20pt}
+    \resumeSubheading
+      {President}{March 2025 -- Present}
+      {Society of Hispanic Professional Engineers (SHPE)}{Newark, NJ}
+      \resumeItemListStart
+      \vspace{10pt}
+
+
+        \resumeItem{Successfully Mentored 20+ freshman and sophomore students to land internships and research opportunities}
+        \vspace{5pt}
+        \resumeItem{Built CLARA - AI Assistant to help with organization operations including email management, event planning, outreach, marketing and everything in between, working independently to deliver intuitive solutions}
+        \vspace{5pt}
+        \resumeItem{Confidently leading team of 20 to organize professional development events for a memberbase of 300 + across campus using articulate communication}
+        \vspace{5pt}
+        \resumeItem{Articulated strategic vision to 2x the number of students getting interviews and internships for the latino community through confident mentorship}
+        \vspace{5pt}
+        \resumeItem{Raised \$70,000 capital for the organization to take 100 students to the national conference and operate independently of the university}
+      \resumeItemListEnd
+
+      \vspace{20pt}
+      \resumeSubheading
+      {Vice President - External Affairs}{May 2024 -- March 2025}
+      {Society of Hispanic Professional Engineers (SHPE)}{Newark, NJ}
+      \resumeItemListStart
+        \vspace{10pt}
+        \resumeItem{Grew our External Organizations and Company connection by 6x in only two months through confident outreach, working independently to identify partnerships}
+        \vspace{5pt}
+        \resumeItem{Currently leading and managing a team of 13 to organize 60+ events and social events a semester to bring social and professional enrichment to our member base of 300+ students using intuitive planning}
+        \vspace{5pt}
+        \resumeItem{Successfully breaking attendance records on a weekly basis by averaging 200\% growth in member engagement through articulate event promotion}
+        \vspace{5pt}
+        \resumeItem{Started Webmaster position for NJIT SHPE yielding 81\% growth in CS student participation}
+        \vspace{5pt}
+        \resumeItem{Started SHPEtina position for NJIT SHPE yielding 43\% growth in Latina student participation through intuitive programming}
+        \vspace{5pt}
+        \resumeItem{Initiated mentorship program where up to 20+ students learned from the experience of the Executive Board}
+        \vspace{5pt}
+        \resumeItem{Established relationships with exterior clubs from local universities to unite the Latino community in NJ/NYC area}
+        \vspace{5pt}
+      \resumeItemListEnd
+
+      \vspace{20pt}
+      \resumeSubheading
+      {Event Coordinator}{Oct 2024 -- May 2024}
+      {Society of Hispanic Professional Engineers (SHPE)}{Newark, NJ}
+      \resumeItemListStart
+        \vspace{10pt}
+        \resumeItem{Organize commodities such as food and workshops resulting in an average of 65 + student involvement, working independently on logistics}
+        \vspace{5pt}
+        \resumeItem{Collaboratively work with a team of 12 to successfully leading SHPE to be the largest student organization on campus}
+        \vspace{5pt}
+        \resumeItem{Run weekly events yielding NJIT SHPE to receive many accolades and be recognized by the Governor of Newark}
+     \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\end{document}
