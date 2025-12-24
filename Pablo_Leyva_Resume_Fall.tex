@@ -148,31 +148,7 @@
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
 
-\resumeSubheading
-{Undergrad Researher  (CAHSI) - Multilingual LLM Training and Bias Analysis}{October 2025 -- Present}
-{Research Fellow}{Newark, NJ}
-\vspace{5pt}
-\resumeItemListStart
-\resumeItem{Build and train a \textbf{foundational multilingual model} on Spanish, Portuguese, Italian, Farsi, and Arabic, with the primary objective of enabling the model to "think" and reason in native languages rather than through translation}
-\resumeItem{Compare and analyze \textbf{bias patterns} between models trained exclusively in English versus multilingual models trained on diverse language corpora to evaluate cultural and linguistic bias disparities}
-\resumeItem{Train specialized \textbf{Small Language Models (SLMs)} on individual target languages and benchmark performance against a foundational multilingual LLM to \textbf{compare efficiency} versus \textbf{accuracy tradeoffs}}
-\resumeItem{To evaluate model performance across multilingual tasks, measuring both computational efficiency and linguistic fidelity in native language reasoning}
-\resumeItemListEnd
 
-\vspace{5pt}
-\resumeSubheading
-{Undergrad Research and Innovation (URI) - Efficient SLM for Agentic Workflows}{Sep 2025 -- Present}
-{Research Fellow}{Newark, NJ}
-\vspace{5pt}
-\resumeItemListStart
-\resumeItem{Designing and building 3B parameter SLM architecture that is trained for CoT and tool selection reasoning}
-\resumeItem{Integrate lightweight adapter layers (LoRA) and Reinforcement Learning into specialize the model for structured business workflows}
-\resumeItem{Evaluate the agentic reliability of the model in executing long, deterministic step-by-step tasks vs. larger LLM baselines}
-\resumeItem{Benchmark on-device performance to \textbf{improve performance} and demonstrate feasibility on consumer hardware}
-\resumeItem{The objective is for the model's foundation to be CoT and step-by-step reasoning so that it can go through post-training process in different niches and carry over that foundation into the specific business use case}
-\resumeItemListEnd
-
-\vspace{5pt}
 \resumeSubheading
 {Apple}{May 2025 -- August 2025}
 {AI/ML Product Engineering Intern}{Cupertino, CA}
@@ -180,13 +156,40 @@
 \vspace{5pt}
 \resumeItemListStart
 
-\resumeItem{Architected \textbf{multi-agent orchestration system} integrating LLMs with Model Context Protocol (MCP), implementing \textbf{reasoning frameworks} and agent coordination patterns using TypeScript and Python}
+\resumeItem{Architected \textbf{multi-agent orchestration system} integrating the Apple Foundation Model(AFM) with Model Context Protocol (MCP), implementing \textbf{graphRAG} and \textbf{Source of Truth} algorithm to ground every answer with a verifiable source}
 
-\resumeItem{Designed \textbf{agentic workflow pipelines} with LangChain \& LangGraph, implementing \textbf{prompt flow automation} and validation frameworks to ensure deterministic agent behavior across diverse execution paths}
+\resumeItem{Designed \textbf{tool selection, execution, and deployment} with Basemind(LangGraph) which used \textbf{TouchID as Human in the Loop validation} for deterministic agent behavior in the Apple Pay Agentic Payment flow}
 
-\resumeItem{Led \textbf{benchmark development and A/B testing framework} to improve business insights, with a focus on Partner Facing and internal use cases}
+\resumeItem{Presented the prototype to higher leadership to show the feasiblity of the \textbf{Agentic Shopping experience} and the potential of the Apple Foundation Model(AFM) for the future of Apple Pay}
 
 \resumeItemListEnd
+
+\vspace{5pt}
+\resumeSubheading
+{Undergrad Research and Innovation (URI) - Agentic Reasoning SLM}{Sep 2025 -- Present}
+{Research Fellow}{Newark, NJ}
+\vspace{5pt}
+\resumeItemListStart
+\resumeItem{Objective: Build the \textbf{specialized reasoning brain} of an agentic system, and let conversational models handle the user interaction}
+\resumeItem{Training a 3B parameter SLM architecture that is trained for one-step reasoning and tool selection}
+\resumeItem{Constructing \textbf{mathematical logic and proofs dataset} as well as \textbf{logic puzzles dataset} to train the SLM }
+\resumeItem{Evaluating the agentic reliability of the model in executing long, deterministic step-by-step tasks vs. larger LLM baselines}
+\resumeItem{Integrating \textbf{lightweight adapter layers (LoRA)} and \textbf{Reinforcement Learning} into the model to specialize it for structured business workflows}
+\resumeItemListEnd
+
+\vspace{5pt}
+\resumeSubheading
+{Caterpillar Inc.}{May 2024 -- August 2024}
+{Software Engineering Intern}{Chicago, IL}
+\vspace{5pt}
+\resumeItemListStart
+\resumeItem{Architected \textbf{end-to-end data pipeline} ingesting 500K+ daily records from Slack, Jira, and Confluence APIs, building ETL workflows with Python and Apache Airflow to power ML models for team productivity analytics}
+\resumeItem{Fine-tuned \textbf{transformer-based NLP models} (BERT, GPT-3.5) to extract semantic insights from unstructured communication data, achieving 89\% accuracy in classifying collaboration patterns and identifying project blockers}
+\resumeItem{Engineered \textbf{RESTful microservices} with FastAPI to serve model predictions in production, handling 10K+ daily inference requests with sub-100ms latency using Redis caching and async processing}
+\resumeItem{Built \textbf{interactive React dashboard} with D3.js visualizations, enabling leadership to explore predictive analytics on team velocity and resource allocation optimization}
+\resumeItemListEnd
+
+
 
 \resumeSubHeadingListEnd
 
@@ -197,11 +200,11 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{ NeuroCache } $|$ \emph{WebGPU, Transformers.js, WebAssembly, PyTorch, llama\_cpp} $|$ \textbf{Python}}{}
+{\textbf{ Open Source - NeuroCache } $|$ \emph{ONNX, Transformers.js, WebAssembly, PyTorch, llama\_cpp} $|$ \textbf{Python}}{}
 
 \vspace{5pt}
 \resumeItemListStart
-\resumeItem{Implemented \textbf{custom KV-cache manipulation layer} with \textbf{dynamic context compression} via attention-based importance scoring and memory slot management, developed \textbf{performance metrics} to benchmark memory efficiency and response quality across conversation sessions}
+\resumeItem{Implemented \textbf{custom KV-cache manipulation layer} with \textbf{dynamic context compression} via attention-based importance scoring and memory slot management, in the proces of benchmarking memory efficiency and response quality across conversation sessions}
 \resumeItemListEnd
 
 \resumeProjectHeading
@@ -248,9 +251,9 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, itemsep=0pt, label={}]
   \small{\item{
-        \textbf{Languages }{: Python, C++ Typescript, JavaScript, Java} \\
+        \textbf{Languages }{: Python, C++, Java} \\
         \vspace{2pt}
-        \textbf{Frameworks }{: React, NEXT.JS , Node, PyTorch, TensorFlow, scikit-learn, LangChain, LangGraph, MCP } \\
+        \textbf{Frameworks }{: PyTorch, TensorFlow, scikit-learn, LangChain, LangGraph, MCP } \\
         \vspace{2pt}
         \textbf{Libraries }{: Jupyter Notebook, Pandas, NumPy, Pytest, scipy, FastAPI, Flask } \\
         \vspace{2pt}
