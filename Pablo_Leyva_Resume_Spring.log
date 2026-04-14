@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  6 MAR 2026 03:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  10 APR 2026 13:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/pabloleyva/Code/personal/Resume/Pablo_Leyva_Resume_Fall.tex
-(/Users/pabloleyva/Code/personal/Resume/Pablo_Leyva_Resume_Fall.tex
+**/Users/pabloleyva/Code/personal/Resume/Pablo_Leyva_Resume_Spring.tex
+(/Users/pabloleyva/Code/personal/Resume/Pablo_Leyva_Resume_Spring.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/article.cls
@@ -255,8 +255,8 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count290
 \l__pdf_internal_box=\box56
-) (./Pablo_Leyva_Resume_Fall.aux)
-\openout1 = `Pablo_Leyva_Resume_Fall.aux'.
+) (./Pablo_Leyva_Resume_Spring.aux)
+\openout1 = `Pablo_Leyva_Resume_Spring.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
 LaTeX Font Info:    ... okay on input line 103.
@@ -291,9 +291,9 @@ LaTeX Font Info:    ... okay on input line 103.
 \everyMPtoPDFconversion=\toks28
 )
 Package hyperref Info: Link coloring OFF on input line 103.
- (./Pablo_Leyva_Resume_Fall.out) (./Pablo_Leyva_Resume_Fall.out)
+ (./Pablo_Leyva_Resume_Spring.out) (./Pablo_Leyva_Resume_Spring.out)
 \@outlinefile=\write3
-\openout3 = `Pablo_Leyva_Resume_Fall.out'.
+\openout3 = `Pablo_Leyva_Resume_Spring.out'.
 
 
 *geometry* driver: auto-detecting
@@ -347,7 +347,7 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 126.
 
-Overfull \hbox (14.57796pt too wide) in alignment at lines 218--218
+Overfull \hbox (14.57796pt too wide) in alignment at lines 213--213
 [] [] 
  []
 
@@ -360,14 +360,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 
 [1
 
-{/usr/local/texlive/2025basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 3.60004pt, for example:
-(fancyhdr)                \setlength{\footskip}{3.60004pt}.
-
-[2] (./Pablo_Leyva_Resume_Fall.aux)
+{/usr/local/texlive/2025basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Pablo_Leyva_Resume_Spring.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -376,22 +369,22 @@ L3 programming layer <2025-01-18>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `Pablo_Leyva_Resume_Fall.out' has not changed.
+Package rerunfilecheck Info: File `Pablo_Leyva_Resume_Spring.out' has not changed.
 (rerunfilecheck)             Checksum: D00BC7FBBAAFFEC796D6A8AC81160843;526.
  ) 
 Here is how much of TeX's memory you used:
- 11372 strings out of 474662
- 180819 string characters out of 5751110
- 629899 words of memory out of 5000000
+ 11371 strings out of 474662
+ 180851 string characters out of 5751110
+ 630909 words of memory out of 5000000
  34281 multiletter control sequences out of 15000+600000
  563406 words of font info for 54 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 75i,11n,79p,434b,601s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,429b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Pablo_Leyva_Resume_Fall.pdf (2 pages, 138147 bytes).
+Output written on Pablo_Leyva_Resume_Spring.pdf (1 page, 137644 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
+ 85 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
