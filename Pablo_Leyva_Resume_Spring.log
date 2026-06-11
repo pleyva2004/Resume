@@ -357,10 +357,6 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 126.
 
-Overfull \hbox (38.5752pt too wide) in alignment at lines 204--204
-[] [] 
- []
-
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 3.60004pt, for example:
@@ -376,4 +372,4 @@ Package rerunfilecheck Info: File `Pablo_Leyva_Resume_Spring.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: D00BC7FBBAAFFEC796D6A8AC81160843;526.
  )
-Output written on Pablo_Leyva_Resume_Spring.xdv (1 page, 54168 bytes).
+Output written on Pablo_Leyva_Resume_Spring.xdv (1 page, 55100 bytes).
