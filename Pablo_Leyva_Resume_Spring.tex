@@ -13,7 +13,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\input{glyphtounicode}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
 
 
 %----------FONT OPTIONS----------
@@ -55,7 +55,7 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
 
 %-------------------------
 % Custom commands
@@ -153,8 +153,8 @@
 {Enterprise GenAI Product Research Intern}{Cupertino, CA}
 \vspace{5pt}
 \resumeItemListStart
-\resumeItem{Built \textbf{model-based tools} that curate and score \textbf{RL post-training data} for a continually-learning SLM; own the team's data-quality workstream studying how curation drives out-of-distribution generalization on agentic Apple Wallet and Apple Pay workflows}
-\resumeItem{Designing \textbf{RL environments with verifiable rewards} (program-analysis-style oracles for payment-flow correctness); implementing \textbf{GRPO/PPO} on-policy training with vLLM rollouts and a reward model trained on preference data}
+\resumeItem{Building \textbf{model-based tools} to curate and score \textbf{RL post-training data} for a continually-learning SLM, studying how \textbf{training data quality} drives \textbf{out-of-distribution generalization} on agentic Apple Wallet and Apple Pay workflows}
+\resumeItem{Designing \textbf{RL environments with verifiable rewards} built on \textbf{static program analysis} (AST-level correctness oracles for generated payment-flow code); implementing \textbf{GRPO} and \textbf{PPO} on-policy training with \textbf{vLLM} rollouts and \textbf{reward model} training over preference data}
 \resumeItemListEnd
 
 \vspace{5pt}
@@ -163,9 +163,9 @@
 {Research Fellow}{Newark, NJ}
 \vspace{5pt}
 \resumeItemListStart
-\resumeItem{Training a \textbf{3B-parameter reasoning SLM} via \textbf{SFT $\rightarrow$ DPO $\rightarrow$ RL fine-tuning} with multi-GPU distributed training (FSDP) on math-proof and logic-puzzle datasets; targeting a public preprint on one-step reasoning generalization in small language models}
-\resumeItem{Constructed a \textbf{synthetic RL environment} with programmatically-checkable rewards for mathematical proof search; ran \textbf{ablation studies} across reward-shaping strategies and data-mixing ratios to isolate sources of reasoning gain}
-\resumeItem{Ran \textbf{linear probes} on hidden activations and \textbf{safety evaluations} (refusal consistency, reward hacking, out-of-distribution robustness), benchmarking the SLM against larger LLM baselines on lm-eval-harness}
+\resumeItem{Training a \textbf{3B-parameter reasoning SLM} via \textbf{SFT $\rightarrow$ DPO $\rightarrow$ RL fine-tuning (GRPO)} on math-proof and logic-puzzle datasets; targeting a \textbf{public preprint} on one-step reasoning generalization in small language models}
+\resumeItem{Constructed \textbf{synthetic RL environment} with verifiable reward signals for mathematical proof search; ran \textbf{ablation studies} across reward shaping strategies and data-mixing ratios to isolate sources of reasoning gain}
+\resumeItem{Ran \textbf{mechanistic interpretability} probes and \textbf{safety evaluations} (refusal consistency, reward hacking, out-of-distribution robustness) designing and maintaining benchmarks for the SLM against larger LLM baselines on \textbf{lm-eval-harness}}
 \resumeItemListEnd
 \vspace{5pt}
 \resumeSubheading
@@ -173,9 +173,9 @@
 {AI/ML Product Engineering Intern}{Cupertino, CA}
 \vspace{5pt}
 \resumeItemListStart
-\resumeItem{Built an \textbf{agent orchestration system} integrating the Apple Foundation Model (AFM) with Model Context Protocol (MCP); collected \textbf{trajectory-level preference data} across 10k+ rollouts to bootstrap a reward-model prototype}
-\resumeItem{Built the team's \textbf{LLM evaluation pipeline} benchmarking agent trajectories (tool-use success, groundedness, hallucination rate) against Claude and GPT baselines; results directly informed fine-tuning priorities}
-\resumeItem{Designed \textbf{tool selection and execution} flows with LangGraph using TouchID human-in-the-loop validation; presented the prototype at the team's end-of-internship review (org director present)}
+\resumeItem{Built an \textbf{agentic AI benchmark suite} evaluating \textbf{multi-agent trajectories} (tool-use success, groundedness, hallucination rate) against Claude and GPT baselines; results directly informed \textbf{reward signals} and fine-tuning priorities}
+\resumeItem{Architected \textbf{multi-agent orchestration system} integrating the Apple Foundation Model (AFM) with Model Context Protocol (MCP); collected \textbf{trajectory-level preference data} across 10k+ rollouts to bootstrap a \textbf{reward model prototype} for downstream RLHF}
+\resumeItem{Designed \textbf{tool selection and execution} with LangGraph using \textbf{TouchID Human-in-the-Loop validation}; presented prototype to senior leadership as evidence for alignment-aware agentic payment flows}
 \resumeItemListEnd
 
 
@@ -185,8 +185,9 @@
 {Software Engineering Intern}{Chicago, IL}
 \vspace{5pt}
 \resumeItemListStart
-\resumeItem{Fine-tuned \textbf{transformer LLMs} (BERT, GPT-3.5) with \textbf{LoRA/QLoRA} on a 500K-record corpus; ran ablation studies on data mixing and learning-rate schedules, reaching 89\% classification accuracy}
-\resumeItem{Built an \textbf{end-to-end data pipeline} with Python and Apache Airflow ingesting 500K+ daily records; served model predictions via \textbf{FastAPI microservices} at sub-100ms latency for 10K+ daily requests}
+\resumeItem{Built a \textbf{multi-agent orchestration} system that automated the \textbf{end-to-end SDLC} for a team developing \textbf{ML algorithms}, coordinating specialized agents to \textbf{generate unit tests}, triage \textbf{CI build/test failures} from logs, and draft \textbf{PR reviews}, closing the loop with \textbf{execution-based validation} (run tests $\rightarrow$ parse results $\rightarrow$ fix) before proposing a merge, freeing researchers to focus on algorithm work}
+\resumeItem{Engineered the full \textbf{agent stack} with \textbf{LangGraph} and \textbf{LangChain}: a \textbf{ReAct-style planner} decomposing tickets into steps, a \textbf{tool registry} exposed over \textbf{MCP (Model Context Protocol)} (test runner, git, log search, code search) with \textbf{tool-calling/function calling}, \textbf{memory} over the repo and prior runs, and a stateful \textbf{orchestration loop} with retry and fallback routing}
+\resumeItem{Implemented \textbf{guardrails} for safe autonomy: \textbf{sandboxed code execution}, output schema validation, \textbf{regression and diff-size checks}, and \textbf{human-in-the-loop} approval before any commit, plus structured \textbf{tracing} of every tool call and token cost for full observability}
 \resumeItemListEnd
 
 
@@ -200,10 +201,10 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{Self-Evolving Agent Harness} $|$ \emph{PyTorch, TRL, Gymnasium, vLLM, LoRA, Weights \& Biases} $|$ \textbf{Python}}{}
+{\textbf{Self-Extending Agent for Automated Code Generation \& Testing} $|$ \emph{PyTorch, TRL, Gymnasium, vLLM, LoRA, Weights \& Biases}}{}
 \vspace{5pt}
 \resumeItemListStart
-\resumeItem{Built the first \textbf{agent harness for non-technical users} that auto-generates \textbf{personalized tools} from natural-language needs and curates on-policy trajectories to \textbf{fine-tune a per-user policy (LoRA)}, internalizing recurring context so the agent no longer re-reads static memory files, cutting per-turn tokens by $\sim$60\%}
+\resumeItem{Built an \textbf{agent harness} that generates, executes, and self-debugs \textbf{Python tools} from natural-language specs in a closed \textbf{generate $\rightarrow$ test $\rightarrow$ validate $\rightarrow$ persist} loop, growing a compounding library of verified tools; curates the resulting \textbf{on-policy trajectories} as \textbf{RL training data} to \textbf{fine-tune a per-user policy (LoRA)} with \textbf{GRPO} against \textbf{verifiable rewards}, cutting per-turn tokens by $\sim$60\%}
 \resumeItemListEnd
 
 \resumeProjectHeading
@@ -241,15 +242,17 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, itemsep=0pt, label={}]
   \small{\item{
-        \textbf{Languages }{: Python (fluent), C++, CUDA, Java} \\
+        \textbf{Languages }{: Python (fluent), C++, CUDA (working), Java} \\
         \vspace{2pt}
         \textbf{ML Frameworks }{: PyTorch, JAX, Hugging Face Transformers, TRL, DeepSpeed, FSDP, vLLM, Ray} \\
+        \vspace{2pt}
+        \textbf{Inference \& Serving }{: vLLM, FastAPI microservices, sub-100ms latency serving (10K+ req/day)} \\
         \vspace{2pt}
         \textbf{Reinforcement Learning }{: PPO, GRPO, DPO, RLHF, reward modeling, Gymnasium, RL environment design, preference data} \\
         \vspace{2pt}
         \textbf{LLM Training \& Evaluation }{: SFT, LoRA/QLoRA, fine-tuning, distillation, synthetic data, lm-eval-harness, safety evaluations, ablation studies} \\
         \vspace{2pt}
-        \textbf{Interpretability \& Alignment }{: mechanistic interpretability, sparse autoencoders, activation steering, scaling laws, reward hacking}
+        \textbf{Agentic }{: LangGraph, LangChain, MCP (Model Context Protocol), tool-calling/function calling, multi-agent orchestration, ReAct, planning, memory, guardrails, human-in-the-loop}
         }}
 \end{itemize}
 
