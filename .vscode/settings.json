@@ -18,5 +18,17 @@
       ]
     }
   ],
-  "latex-workshop.latex.recipe.default": "tectonic"
+  "latex-workshop.latex.recipe.default": "tectonic",
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.log",
+    "*.out",
+    "*.fls",
+    "*.fdb_latexmk",
+    "*.synctex.gz",
+    "*.toc",
+    "*.bbl",
+    "*.blg"
+  ]
 }

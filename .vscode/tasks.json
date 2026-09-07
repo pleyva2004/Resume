@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "LaTeX: Build (latexmk)",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "latexmk -pdf -interaction=nonstopmode -file-line-error -halt-on-error '${fileBasename}' && latexmk -c '${fileBasename}'"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "LaTeX: Watch (latexmk -pvc)",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "latexmk -pdf -interaction=nonstopmode -file-line-error -halt-on-error '${fileBasename}' || true; latexmk -pdf -pvc -interaction=nonstopmode -file-line-error -halt-on-error '${fileBasename}'"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "isBackground": true,
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "key": "cmd+enter",
+    "command": "workbench.action.tasks.runTask",
+    "args": "LaTeX: Build (latexmk)",
+    "when": "resourceExtname == '.tex' && editorTextFocus"
+  }
+]
