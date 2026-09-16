@@ -1,24 +1,28 @@
 {
   "latex-workshop.latex.tools": [
     {
-      "name": "tectonic",
-      "command": "tectonic",
+      "name": "latexmk",
+      "command": "latexmk",
       "args": [
-        "--synctex",
-        "--keep-logs",
-        "%DOCFILE%.tex"
+        "-pdf",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-synctex=1",
+        "%DOC%"
       ]
     }
   ],
   "latex-workshop.latex.recipes": [
     {
-      "name": "tectonic",
+      "name": "latexmk",
       "tools": [
-        "tectonic"
+        "latexmk"
       ]
     }
   ],
-  "latex-workshop.latex.recipe.default": "tectonic",
+  "latex-workshop.latex.recipe.default": "latexmk",
+  "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.latex.autoClean.run": "onBuilt",
   "latex-workshop.latex.clean.fileTypes": [
     "*.aux",

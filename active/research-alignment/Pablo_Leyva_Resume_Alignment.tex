@@ -116,7 +116,7 @@
 {B.S. in Applied Mathematics ( Statistics ) \& Computer Science (AI: Learning and Reasoning) }{Aug 2023 -- May 2027}
 \vspace{3pt}
 \resumeItemListStart
-\resumeItem{\textbf{Relevant Coursework:} Data Structures \& Algorithms, Software Engineering, Database Systems, Intro to AI, Intro to Machine Learning, Neurosymbolic AI, Explainable AI, Deep Learning, Reinforcement Learning, Probability, Linear Algebra, Convex Optimization}
+\resumeItem{\textbf{Relevant Coursework:} Data Structures \& Algorithms, Software Engineering, Database Systems, Intro to Machine Learning, Neurosymbolic AI, Explainable AI, Deep Learning, Reinforcement Learning, Probability, Linear Algebra, Convex Optimization}
 \resumeItemListEnd
 \vspace{5pt}
 
@@ -130,22 +130,15 @@
 \vspace{5pt}
 
 \resumeSubheading
-{Algorithms and Architectures for Reasoning and Intelligent Automation (ARIA) Lab}{Sep 2026 -- Present}
-{Research Fellow}{Newark, NJ}
-\vspace{5pt}
-\resumeItemListStart
-\resumeItem{Studying \textbf{semantic faithfulness at the neural-symbolic interface}: LLM-generated first-order logic that is solver-valid yet encodes a different proposition, so a theorem prover returns apparently rigorous reasoning over a wrong representation}
-\resumeItem{Building a \textbf{structure-aware semantic auditor} between formalizer and solver that decomposes and aligns the English and the NL$\rightarrow$FOL output, emitting a \textbf{component-level diagnosis} (error category, corrupted span, expected vs. generated) instead of a confidence score, so flagged formalizations can be repaired rather than only rejected}
-\resumeItemListEnd
-
-\resumeSubheading
 {Apple}{May 2026 -- August 2026}
 {AI/ML Intern}{Cupertino, CA}
 \vspace{5pt}
+
 \resumeItemListStart
 \resumeItem{Built \textbf{model-based tools} that curate and score \textbf{RL post-training data} for a continually-learning SLM; own the team's data-quality workstream studying how curation drives out-of-distribution generalization on agentic Apple Wallet and Apple Pay workflows}
-\resumeItem{Designing \textbf{RL environments with verifiable rewards} (program-analysis-style oracles for payment-flow correctness); implementing \textbf{GRPO/PPO} on-policy training with vLLM rollouts and a reward model trained on preference data}
+\resumeItem{Designing \textbf{RL environments with verifiable rewards} (dynamic agentic commerce flows); implementing \textbf{GRPO/PPO} on-policy training with vLLM rollouts and a reward model trained on preference data}
 \resumeItemListEnd
+\vspace{5pt}
 
 \resumeSubheading
 {Undergrad Research and Innovation (URI) - Agentic Reasoning SLM}{Sep 2025 -- May 2026}
@@ -156,6 +149,7 @@
 \resumeItem{Constructed a \textbf{synthetic RL environment} with programmatically-checkable rewards for mathematical proof search; ran \textbf{ablation studies} across reward-shaping strategies and data-mixing ratios to isolate sources of reasoning gain}
 \resumeItem{Ran \textbf{linear probes} on hidden activations and \textbf{safety evaluations} (refusal consistency, reward hacking, out-of-distribution robustness), benchmarking the SLM against larger LLM baselines on lm-eval-harness}
 \resumeItemListEnd
+\vspace{5pt}
 
 \resumeSubheading
 {Apple}{May 2025 -- August 2025}
@@ -166,7 +160,7 @@
 \resumeItem{Built the team's \textbf{LLM evaluation pipeline} benchmarking agent trajectories (tool-use success, groundedness, hallucination rate) against Claude and GPT baselines; results directly informed fine-tuning priorities}
 \resumeItem{Designed \textbf{tool selection and execution} flows with LangGraph using TouchID human-in-the-loop validation; presented the prototype at the team's end-of-internship review (org director present)}
 \resumeItemListEnd
-
+\vspace{5pt}
 
 
 
@@ -190,20 +184,17 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{Mechanistic Interpretability of Reward Models} $|$ \emph{PyTorch, TransformerLens, sae\_lens, HuggingFace, Anthropic hh-rlhf} $|$ \textbf{Python}}{}
+{\textbf{Mechanistic Interpretability of Reward Models} $|$ \emph{PyTorch, TransformerLens, sae\_lens, Skywork-Reward, hh-rlhf} $|$ \textbf{Python}}{}
 \vspace{5pt}
 \resumeItemListStart
-\resumeItem{Trained \textbf{sparse autoencoders} on mid-layer activations of open-source reward models (Skywork-Reward, DeBERTa-RM) over \textbf{preference-pair datasets} (hh-rlhf, UltraFeedback) to extract interpretable features driving the scalar reward}
-\resumeItem{Ranked SAE features by \textbf{causal influence on reward score} and flagged candidate \textbf{reward-hacking proxies} (response length, hedging, markdown formatting, sycophantic apology) that correlate with RM score but not with human preference}
-\resumeItem{Implemented \textbf{activation steering} mitigation that ablates hacky feature directions at inference, recovering $\sim$8 pts of preference accuracy on held-out adversarial pairs; writeup in draft for Alignment Forum / arXiv}
+\resumeItem{Recovered $\sim$8 pts of preference accuracy on held-out adversarial pairs by training \textbf{sparse autoencoders} on reward-model activations, ranking features by \textbf{causal influence on reward score}, and ablating at inference the \textbf{reward-hacking proxies} (response length, hedging, sycophantic apology) they exposed}
 \resumeItemListEnd
 
 \resumeProjectHeading
 {\textbf{Self-Aligning Agent Harness} $|$ \emph{PyTorch, TRL, Gymnasium, vLLM, LoRA, Weights \& Biases} $|$ \textbf{Python}}{}
 \vspace{5pt}
 \resumeItemListStart
-\resumeItem{Built an \textbf{agent harness that aligns its own policy}: the model \textbf{self-critiques and revises} on-policy trajectories against a natural-language constitution, mines \textbf{self-generated preference pairs (RLAIF)} from the critiques, and closes the loop with \textbf{iterative DPO on a LoRA adapter}}
-\resumeItem{Added \textbf{rejection-sampling fine-tuning} over vLLM rollouts filtered by programmatic verifiers, plus a \textbf{self-reward model} calibrated against held-out human judgments; ran ablations on judge strength and preference volume, tracking \textbf{reward hacking and refusal-consistency drift} across alignment rounds in W\&B}
+\resumeItem{Built an \textbf{agent harness that aligns its own policy}: self-critique against a natural-language constitution $\rightarrow$ \textbf{self-generated preference pairs (RLAIF)} $\rightarrow$ \textbf{iterative DPO} on a LoRA adapter over vLLM rollouts filtered by programmatic verifiers; ablated judge strength and preference volume while tracking reward hacking and refusal-consistency drift across alignment rounds}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
