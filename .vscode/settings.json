@@ -8,7 +8,6 @@
         "-interaction=nonstopmode",
         "-file-line-error",
         "-halt-on-error",
-        "-synctex=1",
         "%DOC%"
       ]
     }
