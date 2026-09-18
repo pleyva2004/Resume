@@ -113,10 +113,10 @@
 \resumeSubHeadingListStart
 \resumeSubheading
 {New Jersey Institute of Technology}{Newark, NJ}
-{B.S. in Applied Mathematics ( Statistics ) \& Computer Science (AI: Learning and Reasoning) }{Aug 2023 -- May 2027}
+{B.S. in Applied Mathematics \& Computer Science}{Aug 2023 -- May 2027}
 \vspace{3pt}
 \resumeItemListStart
-\resumeItem{\textbf{Relevant Coursework:} Data Structures \& Algorithms, Software Engineering, Database Systems, Intro to Machine Learning, Neurosymbolic AI, Explainable AI, Deep Learning, Reinforcement Learning, Probability, Linear Algebra, Convex Optimization}
+\resumeItem{\textbf{Relevant Coursework:}  Data Structures \& Algorithms, Software Engineering, Database Systems, Intro to Machine Learning, Neurosymbolic AI, Explainable AI, Deep Learning, Reinforcement Learning}
 \resumeItemListEnd
 \vspace{5pt}
 
@@ -130,35 +130,50 @@
 \vspace{5pt}
 
 \resumeSubheading
+{Algorithms and Architectures for Reasoning and Intelligent Automation Lab}{Sep 2026 -- Present}
+{Professor Kieran Murphy, Professor Shivvrat Arya}{Newark, NJ}
+\vspace{5pt}
+
+\resumeItemListStart
+\resumeItem{Building a semantic auditing system by comparing natural-language statements with LLM-generated first-order logic to detect semantic errors before they propagate into symbolic reasoning}
+\resumeItem{Investigating mechanistic signatures of misalignment in LLMs by combining causal circuit analysis with persistent homology over attention graphs and residual-stream activations, test detectab under distribution shift and monitor-targeted attacks}
+\resumeItemListEnd
+\vspace{5pt}
+
+
+\resumeSubheading
 {Apple}{May 2026 -- August 2026}
 {AI/ML Intern}{Cupertino, CA}
 \vspace{5pt}
 
 \resumeItemListStart
-\resumeItem{Worked on Agentic Commerce Siri: built full-stack \textbf{commerce agent harness} utilizing Apple Pay and Wallet APIs to execute multi-step agentic workflows for purchaing, booking, reserving, and scheduling and delegated sub-agents for "offline" work}
-\resumeItem{Designed \textbf{RL environments with verifiable rewards} (dynamic agentic commerce flows); implemented \textbf{GRPO and PPO} on-policy training with vLLM rollouts and a reward model trained on user preference data}
+\resumeItem{First intern to work on \textbf{Agentic Commerce Siri} by utilizing Apple Pay and Wallet APIs to execute multi-step agentic workflows for purchasing, booking, reserving, and scheduling and delegated sub-agents for "offline" work}
+\resumeItem{Implemented \textbf{SpeechAnalyzer} to extract user intent and used \textbf{on-device SLM} to generate user-context aware instruction prompt }
+\resumeItem{Built synthesizer for multimodal input from speech and \textbf{On-Screen Awareness} to predicting user problem and intent}
 \resumeItemListEnd
 \vspace{5pt}
 
 \resumeSubheading
-{Undergrad Research and Innovation (URI) - Agentic Reasoning SLM}{Sep 2025 -- May 2026}
-{Research Fellow}{Newark, NJ}
+{President}{Sep 2026 -- Present}
+{Society of Hispanic Professional Engineers (SHPE)}{Newark, NJ}
 \vspace{5pt}
+
 \resumeItemListStart
-\resumeItem{Trained a \textbf{3B-parameter reasoning SLM} via \textbf{SFT $\rightarrow$ DPO $\rightarrow$ RL fine-tuning} with multi-GPU distributed training (FSDP) on math-proof and logic-puzzle datasets, studying one-step reasoning generalization in small language models}
-\resumeItem{Constructed a \textbf{synthetic RL environment} with programmatically-checkable rewards for mathematical proof search; ran \textbf{ablation studies} across reward-shaping strategies and data-mixing ratios to isolate sources of reasoning gain}
-\resumeItem{Ran \textbf{linear probes} on hidden activations and \textbf{safety evaluations} (refusal consistency, reward hacking, out-of-distribution robustness), benchmarking the SLM against larger LLM baselines on lm-eval-harness}
+\resumeItem{Led a team of 13 officers to organize close to \textbf{100 events year} round leading to highest membership count at \textbf{250+ members}}
+\resumeItem{Invited to intern at \textbf{Angeles Investors} where I analyzed \textbf{200 startups} and led \textbf{500k} pre-seed deal for \textbf{48M} pre-money valuation}
+\resumeItem{Launched \textbf{internSHPE} mentorship program pairing underclassmen with the presidential team; all 3 mentees joined the executive board}
 \resumeItemListEnd
-\vspace{5pt}
+\vspace{-5pt}
 
 \resumeSubheading
 {Apple}{May 2025 -- August 2025}
 {AI/ML Intern}{Cupertino, CA}
 \vspace{5pt}
 \resumeItemListStart
-\resumeItem{Built an \textbf{agent orchestration system} integrating the Apple Foundation Model (AFM) with Model Context Protocol (MCP); designed stateful multi-step tool execution with retry and human-in-the-loop fallback paths, collecting \textbf{trajectory-level preference data} across 10k+ rollouts}
-\resumeItem{Built the team's \textbf{LLM evaluation pipeline} benchmarking agent trajectories (tool-use success, groundedness, hallucination rate) against Claude and GPT baselines; results directly informed fine-tuning priorities}
-\resumeItem{Designed \textbf{tool selection and execution} flows with LangGraph using TouchID human-in-the-loop validation; presented the prototype at the team's end-of-internship review (sr dir offered return internship)}
+
+\resumeItem{Deployed a \textbf{LangGraph agent} integrating \textbf{RAG} with \textbf{MCP} to reason over technical docs for Apple Pay Merchant Partners}
+\resumeItem{Utilized qdrant for multilingual similarity search, and \textbf{GraphQL} to efficiently fetch and manipulate data across internal systems}
+\resumeItem{Built the team's \textbf{LLM evaluation pipeline} benchmarking agent trajectories, tool-use success, groundedness, hallucination rate}
 \resumeItemListEnd
 \vspace{5pt}
 
@@ -169,12 +184,10 @@
 {Software Engineering Intern}{Chicago, IL}
 \vspace{5pt}
 \resumeItemListStart
-\resumeItem{Built an \textbf{end-to-end data pipeline} with Python and Apache Airflow (scheduled DAGs with retry and failure handling) ingesting 500K+ daily records; served model predictions via \textbf{FastAPI microservices} at sub-100ms latency for 10K+ daily requests}
-\resumeItem{Fine-tuned \textbf{transformer LLMs} (BERT, GPT-3.5) with \textbf{LoRA} on a 500K-record corpus; ran ablation studies on data mixing and learning-rate schedules, reaching 89\% classification accuracy}
+\resumeItem{Implemented data validation, transformation, and storage in \textbf{Postgres} for Autonomous Vehicle Fleet Management via Apache Airflow}
+\resumeItem{Fine-tuned \textbf{transformer models} reaching \textbf{89\%} classification accuracy for predictive maintenance of heavy machinery}
+\resumeItem{Served \textbf{end-to-end data pipeline} and model predictions via \textbf{FastAPI microservices} at sub-100ms latency for 10K+ daily requests} 
 \resumeItemListEnd
-
-
-
 \resumeSubHeadingListEnd
 
 
@@ -184,46 +197,43 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{Mechanistic Interpretability of Reward Models} $|$ \emph{PyTorch, TransformerLens, sae\_lens, Skywork-Reward, hh-rlhf} $|$ \textbf{Python}}{}
+{\textbf{Founder - NJIT SHPE Mobile App} $|$ \emph{Typescript} $|$ \textbf{React-Native}}{}
 \vspace{5pt}
 \resumeItemListStart
-\resumeItem{Recovered $\sim$8 pts of preference accuracy on held-out adversarial pairs by training \textbf{sparse autoencoders} on reward-model activations, ranking features by causal influence on reward score, and ablating at inference the \textbf{reward-hacking proxies}}
+\resumeItem{Built and shipped the chapter’s first \textbf{React-Native} app to Android and iOS store in 27 days leading a team of 3 engineers}
+\resumeItem{Scaled to 200+ users in its first month, serving member details, event registration, mentorship program and career growth in \textbf{Postgres}}
+\resumeItem{Implemented \textbf{Push Notifications}, \textbf{In-App Messaging} and Instagram-like \textbf{Feedpage} to increase engagement and retention}
 \resumeItemListEnd
-\vspace{2pt}
+
+\resumeProjectHeading
+{\textbf{Evolv} $|$ \emph{Flask, NumPy, Pandas} $|$ \textbf{Python}}{}
+\vspace{5pt}
+\resumeItemListStart
+\resumeItem{Placed \textbf{1st of 546} at \textbf{Hackprinceton} in Predictive intelligence, building the entire backend and predictive modeling in under 12 hours}
+\resumeItem{Built a \textbf{geospatial data-center} impact simulation platform using \textbf{Flask, NumPy, Pandas}, and U.S. Census, EIA, and weather APIs} 
+\resumeItem{Modeled data-center energy impact climate-adjusted cooling, grid carbon intensity, electricity pricing, probabilistic scenarios and served the analyses in \textbf{under 5 seconds} through a \textbf{Kubernetes} pipeline with parallel API orchestration, caching, and LLM-generated reports}
+
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{QuStoch} $|$ \emph{Qiskit, Flask, scikit-learn} $|$ \textbf{Python}}{}
+\vspace{5pt}
+\resumeItemListStart
+\resumeItem{Placed \textbf{1st of 642} at \textbf{HackNYU}, learned quantum computing, stochastic brownian motion and built the simulator in under 16 hours} 
+\resumeItem{Built a hybrid quantum-classical stock market simulator by encoding Brownian-motion trajectories into quantum circuits} 
+\resumeItem{Developed an ML-powered financial forecasting pipeline using Python, Random Forest, and quantum-generated stochastic features, achieving an $R^2$ of 0.92 while improving simulation efficiency by ~5×.} 
+\resumeItemListEnd
+
 
 \resumeProjectHeading
 {\textbf{NeuroCache: KV-Cache Memory Manager} $|$ \emph{PyTorch, ONNX, llama\_cpp, WebAssembly, Transformers.js} $|$ \textbf{C++}}{}
 \vspace{5pt}
 \resumeItemListStart
+\resumeItem{Submitted PR to \textbf{llama\_cpp}}
 \resumeItem{Implemented a \textbf{KV-cache memory manager} with attention-scored \textbf{eviction policy}, slot-based allocation, and cache-replacement algorithms for dynamic context compression; benchmarking memory efficiency and response quality across long conversation sessions}
 \resumeItemListEnd
 \vspace{2pt}
 
-\resumeProjectHeading
-{\textbf{Self-Aligning Agent Harness} $|$ \emph{PyTorch, TRL, Gymnasium, vLLM, LoRA, Weights \& Biases} $|$ \textbf{Python}}{}
-\vspace{5pt}
-\resumeItemListStart
-\resumeItem{Built an \textbf{agent harness that aligns its own policy}: self-critique against a natural-language constitution  \textbf{self-generated preference pairs (RLAIF)} \textbf{iterative DPO} on a LoRA adapter over vLLM rollouts filtered by programmatic verifiers; ablated judge strength and preference volume while tracking reward hacking and refusal-consistency drift across alignment rounds}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-%-------------------------------------------
-
-
-\section{Leadership}
-
-\resumeSubHeadingListStart
-
-\vspace{5pt}
-\resumeSubheading
-{President, Vice President - External Affairs, Event Coordinator}{October 2023 -- May 2026}
-{Society of Hispanic Professional Engineers (SHPE)}{Newark, NJ}
-
-\vspace{5pt}
-\resumeItemListStart
-\resumeItem{Built and shipped the chapter's first \textbf{React-Native app} in 27 days with a team of 5 engineers, growing it to \textbf{200+ users} in its first month}
-\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -231,16 +241,12 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, itemsep=0pt, label={}]
   \small{\item{
-        \textbf{Languages }{: Python, C++, JavaScript/TypeScript, Java, Swift} \\
+        \textbf{Languages }{: Python, C++, JavaScript/TypeScript, Swift} \\
         \vspace{2pt}
-        \textbf{Systems \& Infrastructure }{: Docker, Kubernetes, Git, PostgreSQL, MySQL, distributed training (DeepSpeed, FSDP), high-throughput inference (vLLM, Ray), REST FastAPI microservices, Apache Airflow pipelines, } \\
+        \textbf{Systems \& Infrastructure }{: Docker, Git, Kubernetes, PostgreSQL, REST FastAPI microservices, Apache Airflow pipelines} \\
         \vspace{2pt}
-        \textbf{ML Frameworks }{: PyTorch, scikit-learn, TensorFlow, Hugging Face Transformers, JAX, NumPy, pandas} \\
+        \textbf{ML Frameworks }{: PyTorch, scikit-learn, Hugging Face Transformers} \\
         \vspace{2pt}
-        \textbf{Reinforcement Learning }{: PPO, GRPO, DPO, RLHF, reward modeling, Gymnasium, RL environment design, preference data} \\
-        \vspace{2pt}
-        \textbf{LLM Training \& Evaluation }{: SFT, LoRA/QLoRA, fine-tuning, distillation, synthetic data, lm-eval-harness, safety evaluations, ablation studies}
         }}
 \end{itemize}
-
 \end{document}
