@@ -1,0 +1,261 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[top=0.35in, bottom=0.35in, left=0.6in, right=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+
+% Clean, balanced list spacing with grid alignment
+\setlist[itemize]{topsep=1.5pt, itemsep=3pt, parsep=0pt, partopsep=0pt}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{setspace}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{\item\small{{#1}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #4} \\
+      {#2} & \textit{\small #3} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeOneLineHeading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}, \textit{#2} & \small #3 $|$ #4 \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0.15in, label={}]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+  \end{itemize}
+}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=0.25in]
+}
+
+\newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{-3pt}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{0.95}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Pablo Leyva} \\ \vspace{1pt}
+    \small
+    \href{mailto:pl33@njit.edu}{\underline{pl33@njit.edu}} $|$
+    908-525-6062 $|$
+    \href{https://linkedin.com/in/pablo-leyva}{\underline{linkedin.com/in/pablo-leyva}} $|$
+    \href{https://pabloleyva.io}{\underline{pabloleyva.io}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \item
+      \textbf{New Jersey Institute of Technology} \hfill Newark, NJ \\
+      B.S. Applied Mathematics \& Computer Science \hfill Expected: May 2027
+
+    \resumeItem{Coursework: Data Structures \& Algorithms, Software Engineering, Database Systems, Machine Learning, Neurosymbolic AI, Explainable AI, Deep Learning, Reinforcement Learning}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeOneLineHeading
+      {AI/ML Intern}
+      {Apple}
+      {May 2026 -- Aug 2026}
+      {Cupertino, CA}
+
+      \vspace{5pt}
+
+      \resumeItemListStart
+        \resumeItem{First intern on Agentic Commerce Siri, using Apple Pay and Wallet APIs to execute multi-step agentic workflows with delegated recursive sub-agents.}
+        \resumeItem{Integrated \textbf{SpeechAnalyzer} to extract user intent and an \textbf{on-device SLM} to generate context-aware instruction.}
+        \resumeItem{Built a \textbf{multimodal synthesizer} fusing speech and \textbf{On-Screen Awareness} signals to predict user problems and intent.}
+      \resumeItemListEnd
+
+
+    \resumeOneLineHeading
+      {Machine Learning Intern}
+      {Angeles Investors}
+      {Jan 2026 -- May 2026}
+      {New York City, NY}
+
+      \vspace{5pt}
+
+
+      \resumeItemListStart
+        \resumeItem{Built an AI startup diligence agent swarm powered by GPT-4o, Tavily API, Lightpanda browser control.}
+        \resumeItem{Deployed an \textbf{asynchronous FastAPI} data ingestion pipeline via \textbf{Docker} that \textbf{parallelized research agents} and streamed structured results in real time, accelerating startup screening and enrichment.}
+        \resumeItem{Production agent led a \textbf{\$500K pre-seed deal} at a \$48M pre-money valuation.}
+      \resumeItemListEnd
+  
+
+
+
+    \resumeOneLineHeading
+      {President}
+      {Society of Hispanic Professional Engineers (SHPE)}
+      {Sep 2025 -- May 2026 }
+      {Newark, NJ}
+
+      \vspace{5pt}
+
+      \resumeItemListStart
+        \resumeItem{Led 13 officers fundraising \textbf{\$40,000} across \textbf{90+} events year-round, growing membership to a record \textbf{250+}.}
+        \resumeItem{Launched ``internSHPE'', a yearly \textbf{mentorship program} pairing 3 underclassmen with the presidential team.}
+        \resumeItem{Architected and shipped the chapter's \textbf{first React Native app} in \textbf{27 days} leading 3 engineers, scaling to \textbf{200+ users} in its \textbf{first month} with event registration, member details, and mentorship-program features.}
+      \resumeItemListEnd
+
+    \resumeOneLineHeading
+      {AI/ML Intern}
+      {Apple}
+      {May 2025 -- Aug 2025}
+      {Cupertino, CA}
+
+      \vspace{5pt}
+
+      \resumeItemListStart
+        \resumeItem{Deployed a \textbf{LangGraph} agent integrating \textbf{RAG} with \textbf{MCP} to reason over technical docs for Apple Pay Merchants.}
+        \resumeItem{Used \textbf{Qdrant} for \textbf{multilingual similarity search} and \textbf{GraphQL} to fetch and manipulate data across internal systems.}
+        \resumeItem{Built \textbf{LLM evaluation pipeline} benchmarking agent trajectories, tool-use success, groundedness, and hallucination rate.}
+      \resumeItemListEnd
+
+    \resumeOneLineHeading
+      {Software Engineering Intern}
+      {Caterpillar Inc.}
+      {May 2024 -- Aug 2024}
+      {Chicago, IL}
+
+      \vspace{5pt}
+
+      \resumeItemListStart
+        \resumeItem{Implemented data validation, transformation, and storage in \textbf{PostgreSQL} for Autonomous Vehicle Fleet Management via \textbf{Apache Airflow} with a \textbf{CI/CD} pipeline.}
+        \resumeItem{Fine-tuned transformer models reaching 89\% classification accuracy for predictive maintenance of heavy machinery.}
+        \resumeItem{Served end-to-end data pipelines via \textbf{FastAPI} microservices at \textbf{sub-100ms} latency for 10K+ daily requests.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {Evolv $|$ \textnormal{\small \href{https://devpost.com/software/kv-cache-on-this}{\underline{Devpost}}}}{Flask, NumPy, Pandas, Python}
+
+      \vspace{3pt}
+
+
+      \resumeItemListStart
+        \resumeItem{Placed \textbf{1st of 546} teams at HackPrinceton, building an entire backend and predictive modeling system in under 12 hours.}
+        \resumeItem{Built a \textbf{geospatial simulation} platform using Census, EIA, and weather APIs to quantify data-center siting tradeoffs.}
+        \resumeItem{Productionized a \textbf{real-time Kubernetes pipeline} with LLM-generated reports, data ingestion into \textbf{PostgreSQL} and cutting end-to-end analysis time to under 5 seconds.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+      {Founder - HAI}{Transformers, PyTorch, pgvector, Redis, Docker, FastAPI, LangGraph, Python }
+
+      \vspace{5pt}
+
+      \resumeItemListStart
+        \resumeItem{Commercialized an AI-powered SAT prep platform, selling to NJ tutoring centers supporting \textbf{600 students} concurrently.}
+        \resumeItem{Built \textbf{multimodal} input/output pipelines for PDFs, images, and text, combining \textbf{OCR}, vector search, semantic retrieval, prompt orchestration, and \textbf{GPT-4o API} to produce personalized questions, explanations, and study material.}
+        \resumeItem{Implemented a \textbf{symbolic verifier} using programmatic solvers, constraint checks, structured outputs, and deterministic validation enforcing \textbf{100\%} solution correctness before delivery.}
+      \resumeItemListEnd
+
+      \vspace{5pt}
+
+    \resumeProjectHeading
+      {RedLoop: Automated LLM Red-Teaming Harness $|$ \textnormal{\small \href{https://github.com/pleyva2004/redloop}{\underline{GitHub}}}}{Python, asyncio, llama.cpp, OpenAI API, pytest}
+
+
+      \vspace{3pt}
+
+
+      \resumeItemListStart
+        \resumeItem{Built an \textbf{automated red-teaming} harness generating \textbf{jailbreak} and \textbf{indirect prompt-injection} attacks, batch-executed against \textbf{tool-using agents} to surface reproducible instruction-following failures in \textbf{agentic} scenarios.}
+        \resumeItem{Implemented a \textbf{PAIR-style adaptive attacker} that rewrites prompts against LLM-judge feedback, with a \textbf{regression suite} re-running known attacks each run to catch reintroduced vulnerabilities.}
+        \resumeItem{Scored \textbf{attack-success-rate} with \textbf{Wilson confidence intervals} across 8 attack techniques and 4 injection scenarios, triaging findings by severity to prioritize highest-reach failure modes.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+  
+
+%-----------SKILLS-----------
+\section{Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \footnotesize{\item{
+      \textbf{Languages}{: Python, C++, JavaScript/TypeScript, Swift} \\
+      \textbf{AI/ML}{: PyTorch, scikit-learn, Hugging Face Transformers, ONNX, LangGraph, RAG, MCP, Qdrant, llama.cpp} \\
+      \textbf{Systems \& Infrastructure}{: Docker, Git, Kubernetes, PostgreSQL, Redis, REST, GraphQL, FastAPI, Apache Airflow, CI/CD, Flask, NumPy, Pandas, React}
+    }}
+  \end{itemize}
+
+%-------------------------------------------
+\end{document}
