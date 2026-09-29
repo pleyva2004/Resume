@@ -13,10 +13,12 @@
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
 \usepackage{enumitem}
 
 % Clean, balanced list spacing with grid alignment
-\setlist[itemize]{topsep=1.5pt, itemsep=3pt, parsep=0pt, partopsep=0pt}
+\setlist[itemize]{topsep=1.5pt, itemsep=2pt, parsep=0pt, partopsep=0pt}
 
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
@@ -106,6 +108,8 @@
     \href{https://pabloleyva.io}{\underline{pabloleyva.io}}
 \end{center}
 
+\vspace{-10pt}
+
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
@@ -113,12 +117,31 @@
       \textbf{New Jersey Institute of Technology} \hfill Newark, NJ \\
       B.S. Applied Mathematics \& Computer Science \hfill Expected: May 2027
 
-    \resumeItem{Coursework: Data Structures \& Algorithms, Software Engineering, Database Systems, Machine Learning, Neurosymbolic AI, Explainable AI, Deep Learning, Reinforcement Learning}
+      \resumeItem{Coursework: Data Structures, Machine Learning, Neurosymbolic AI, Explainable AI, Deep Learning, Reinforcement Learning}
+
+
   \resumeSubHeadingListEnd
+  \vspace{-5pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+
+      \resumeOneLineHeading
+      {Research Engineer Intern}
+      {Mechanistic Interpretibility \href{https://kieranamurphy.com/}{ \scriptsize\textcolor{gray!90}{\faExternalLink*}} }
+      {Sep 2026 -- Present}
+      {Newark, NJ}
+
+      \vspace{5pt}
+
+      \resumeItemListStart
+      \resumeItem{Advised by Kieran Murphy to build a  \textbf{PyTorch} pipeline classifying all \textbf{144 GPT-2 attention heads} by cross-checking in \textbf{TransformerLens} and \textbf{Hugging Face}  to quantify no-op attention behavior; 74\% default to the BOS sink.}
+      \resumeItem{Re-ran the 3,000 sequences of rare, common and byte-free tokens; 15 heads shifted oppositely in early and late layers.}
+      \resumeItem{Running \textbf{causal experiments} of 1.2M sequences to isolate attention shift.}
+      \resumeItemListEnd
+
+      \vspace{5pt}
 
     \resumeOneLineHeading
       {AI/ML Intern}
@@ -129,9 +152,9 @@
       \vspace{5pt}
 
       \resumeItemListStart
-        \resumeItem{First intern on Agentic Commerce Siri, using Apple Pay and Wallet APIs to execute multi-step agentic workflows with delegated recursive sub-agents.}
-        \resumeItem{Integrated \textbf{SpeechAnalyzer} to extract user intent and an \textbf{on-device SLM} to generate context-aware instruction.}
-        \resumeItem{Built a \textbf{multimodal synthesizer} fusing speech and \textbf{On-Screen Awareness} signals to predict user problems and intent.}
+      \resumeItem{Designed agentic-commerce use cases for Siri, using Apple Wallet and Event Passes data as context to anticipate user needs.}
+      \resumeItem{Built a \textbf{multimodal synthesizer} fusing speech and \textbf{On-Screen Awareness} into instruction prompts.}
+      \resumeItem{Proposed a screenless human-computer interface that delegates work to recursive subagents on the user's behalf.}
       \resumeItemListEnd
 
 
@@ -144,10 +167,9 @@
       \vspace{5pt}
 
 
-      \resumeItemListStart
-        \resumeItem{Built an AI startup diligence agent swarm powered by GPT-4o, Tavily API, Lightpanda browser control.}
-        \resumeItem{Deployed an \textbf{asynchronous FastAPI} data ingestion pipeline via \textbf{Docker} that \textbf{parallelized research agents} and streamed structured results in real time, accelerating startup screening and enrichment.}
-        \resumeItem{Production agent led a \textbf{\$500K pre-seed deal} at a \$48M pre-money valuation.}
+       \resumeItemListStart
+        \resumeItem{Productized AI \textbf{agent swarm} powered by GPT-4o which led to a \textbf{\$500K pre-seed deal} at a \$48M pre-money valuation.}
+        \resumeItem{Deployed an \textbf{asynchronous FastAPI} data ingestion pipeline via \textbf{Docker} that streamed structured results in real time, accelerating startup screening, due dilligence and outreach.}
       \resumeItemListEnd
   
 
@@ -163,8 +185,7 @@
 
       \resumeItemListStart
         \resumeItem{Led 13 officers fundraising \textbf{\$40,000} across \textbf{90+} events year-round, growing membership to a record \textbf{250+}.}
-        \resumeItem{Launched ``internSHPE'', a yearly \textbf{mentorship program} pairing 3 underclassmen with the presidential team.}
-        \resumeItem{Architected and shipped the chapter's \textbf{first React Native app} in \textbf{27 days} leading 3 engineers, scaling to \textbf{200+ users} in its \textbf{first month} with event registration, member details, and mentorship-program features.}
+        \resumeItem{Architected and shipped the chapter's \textbf{first iOS app} in \textbf{27 days} leading 3 engineers, scaling to \textbf{200+ users} in its \textbf{first month} with event registration, member details, and mentorship-program features.}
       \resumeItemListEnd
 
     \resumeOneLineHeading
@@ -179,25 +200,10 @@
         \resumeItem{Deployed a \textbf{LangGraph} agent integrating \textbf{RAG} with \textbf{MCP} to reason over technical docs for Apple Pay Merchants.}
         \resumeItem{Used \textbf{Qdrant} for \textbf{multilingual similarity search} and \textbf{GraphQL} to fetch and manipulate data across internal systems.}
         \resumeItem{Built \textbf{LLM evaluation pipeline} benchmarking agent trajectories, tool-use success, groundedness, and hallucination rate.}
-      \resumeItemListEnd
-
-    \resumeOneLineHeading
-      {Software Engineering Intern}
-      {Caterpillar Inc.}
-      {May 2024 -- Aug 2024}
-      {Chicago, IL}
-
-      \vspace{5pt}
-
-      \resumeItemListStart
-        \resumeItem{Implemented data validation, transformation, and storage in \textbf{PostgreSQL} for Autonomous Vehicle Fleet Management via \textbf{Apache Airflow} with a \textbf{CI/CD} pipeline.}
-        \resumeItem{Fine-tuned transformer models reaching 89\% classification accuracy for predictive maintenance of heavy machinery.}
-        \resumeItem{Served end-to-end data pipelines via \textbf{FastAPI} microservices at \textbf{sub-100ms} latency for 10K+ daily requests.}
-      \resumeItemListEnd
-
+      \resumeItemListEnd 
   \resumeSubHeadingListEnd
 
-
+  \vspace{-5pt}
 
 
 
@@ -206,15 +212,15 @@
   \resumeSubHeadingListStart
 
     \resumeProjectHeading
-      {Evolv $|$ \textnormal{\small \href{https://devpost.com/software/kv-cache-on-this}{\underline{Devpost}}}}{Flask, NumPy, Pandas, Python}
+      {Evolv $|$ \textnormal{\small \href{https://devpost.com/software/kv-cache-on-this}{\underline{Devpost}}}}{NumPy, Pandas, Python}
 
       \vspace{3pt}
 
 
       \resumeItemListStart
         \resumeItem{Placed \textbf{1st of 546} teams at HackPrinceton, building an entire backend and predictive modeling system in under 12 hours.}
-        \resumeItem{Built a \textbf{geospatial simulation} platform using Census, EIA, and weather APIs to quantify data-center siting tradeoffs.}
-        \resumeItem{Productionized a \textbf{real-time Kubernetes pipeline} with LLM-generated reports, data ingestion into \textbf{PostgreSQL} and cutting end-to-end analysis time to under 5 seconds.}
+        \resumeItem{Built a \textbf{geospatial stochastic simulation} platform to forecast longterm regional impact.}
+        \resumeItem{Productionized a \textbf{real-time Kubernetes pipeline} with LLM-generated reports, end-to-end running under 5 seconds.}
         \resumeItemListEnd
 
     \resumeProjectHeading
@@ -224,24 +230,51 @@
 
       \resumeItemListStart
         \resumeItem{Commercialized an AI-powered SAT prep platform, selling to NJ tutoring centers supporting \textbf{600 students} concurrently.}
-        \resumeItem{Built \textbf{multimodal} input/output pipelines for PDFs, images, and text, combining \textbf{OCR}, vector search, semantic retrieval, prompt orchestration, and \textbf{GPT-4o API} to produce personalized questions, explanations, and study material.}
-        \resumeItem{Implemented a \textbf{symbolic verifier} using programmatic solvers, constraint checks, structured outputs, and deterministic validation enforcing \textbf{100\%} solution correctness before delivery.}
+        \resumeItem{Built \textbf{multimodal} input/output \textbf{pipelines} for PDFs, images, and text, combining \textbf{OCR}, vector search, semantic retrieval, prompt orchestration, and GPT-4o API to produce personalized questions, explanations, and study material.}
+        \resumeItem{Implemented a \textbf{symbolic verifier} for mathemtical reasoning on CoT yielding \textbf{100\%} solution correctness before delivery.}
       \resumeItemListEnd
 
       \vspace{5pt}
 
     \resumeProjectHeading
-      {RedLoop: Automated LLM Red-Teaming Harness $|$ \textnormal{\small \href{https://github.com/pleyva2004/redloop}{\underline{GitHub}}}}{Python, asyncio, llama.cpp, OpenAI API, pytest}
+      {NeuroCache: KV-Cache Manager $|$ \textnormal{\small \href{https://github.com/pleyva2004/context-control-kv-cache}{\underline{GitHub}}}}{PyTorch, ONNX, llama.cpp, Transformers.js, C++}
 
 
       \vspace{3pt}
 
 
       \resumeItemListStart
-        \resumeItem{Built an \textbf{automated red-teaming} harness generating \textbf{jailbreak} and \textbf{indirect prompt-injection} attacks, batch-executed against \textbf{tool-using agents} to surface reproducible instruction-following failures in \textbf{agentic} scenarios.}
-        \resumeItem{Implemented a \textbf{PAIR-style adaptive attacker} that rewrites prompts against LLM-judge feedback, with a \textbf{regression suite} re-running known attacks each run to catch reintroduced vulnerabilities.}
-        \resumeItem{Scored \textbf{attack-success-rate} with \textbf{Wilson confidence intervals} across 8 attack techniques and 4 injection scenarios, triaging findings by severity to prioritize highest-reach failure modes.}
+        \resumeItem{Implemented a KV-cache branching for \textbf{llama.cpp} with attention-scored eviction and slot-based allocation.}
+        \resumeItem{Designed \textbf{cache-replacement algorithms} balancing memory footprint against response quality for long-context sessions.}
       \resumeItemListEnd
+
+      \vspace{5pt}
+
+    \resumeProjectHeading
+      {Scholastic-LLM: On-Device Distillation $|$ \textnormal{\small \href{https://github.com/pleyva2004/scholastic-llm}{\underline{GitHub}} $|$ \href{https://huggingface.co/spaces/pleyva2004/scholastic-llm-demo}{\underline{Hugging Face}}}}{MLX, PEFT, Hugging Face, Python}
+
+      \vspace{3pt}
+
+      \resumeItemListStart
+        \resumeItem{Distilled Claude Sonnet 4.6 into an \textbf{8-bit Qwen 2.5 7B} via on-device \textbf{LoRA} in 12.7 GB, lifting task score \textbf{258\%}.}
+        \resumeItem{Built evals over 5 checkpoints; traced \textbf{DPO}'s zero gain to preference saturation; shipped best \textbf{SFT} via \textbf{PEFT}.}
+      \resumeItemListEnd
+
+       \vspace{5pt}
+
+    \resumeProjectHeading
+      {RedLoop: Automated Red-Teaming $|$ \textnormal{\small \href{https://github.com/pleyva2004/redloop}{\underline{GitHub}}}}{asyncio, Ollama, Gemma 4, Python}
+
+
+      \vspace{3pt}
+
+
+      \resumeItemListStart
+        \resumeItem{Built an \textbf{automated red-teaming} harness (\textbf{132} attempts across \textbf{jailbreak} and \textbf{agentic prompt-injection}) that found a \textbf{reproducible} injection hijacking a \textbf{tool-using agent} into an unauthorized action.}
+        \resumeItem{Implemented a \textbf{PAIR-style adaptive attacker} over \textbf{LLM-judge} feedback and a \textbf{regression corpus} replaying known issues each build to verify mitigations.}
+        \resumeItem{Reported \textbf{attack-success-rate} with \textbf{95\% CIs} by category, technique, and scenario to expose evaluation-coverage gaps and triage by severity.}
+      \resumeItemListEnd
+      
 
   \resumeSubHeadingListEnd
 
@@ -252,8 +285,8 @@
   \begin{itemize}[leftmargin=0.15in, label={}]
     \footnotesize{\item{
       \textbf{Languages}{: Python, C++, JavaScript/TypeScript, Swift} \\
-      \textbf{AI/ML}{: PyTorch, scikit-learn, Hugging Face Transformers, ONNX, LangGraph, RAG, MCP, Qdrant, llama.cpp} \\
-      \textbf{Systems \& Infrastructure}{: Docker, Git, Kubernetes, PostgreSQL, Redis, REST, GraphQL, FastAPI, Apache Airflow, CI/CD, Flask, NumPy, Pandas, React}
+      \textbf{AI/ML}{: PyTorch, scikit-learn, Hugging Face Transformers, LangGraph, RAG, MCP, Qdrant, llama.cpp, Ollama} \\
+      \textbf{AI Safety \& Red-Teaming}{: prompt injection, jailbreak evaluation, LLM-as-judge, adversarial robustness, agentic tool-use} \\
     }}
   \end{itemize}
 
