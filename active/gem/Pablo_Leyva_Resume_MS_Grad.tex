@@ -1,0 +1,288 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[top=0.35in, bottom=0.35in, left=0.6in, right=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{enumitem}
+
+% Clean, balanced list spacing with grid alignment
+\setlist[itemize]{topsep=1.5pt, itemsep=3pt, parsep=0pt, partopsep=0pt}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{setspace}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{\item\small{{#1}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #4} \\
+      {#2} & \textit{\small #3} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeOneLineHeading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}, \textit{#2} & \small #3 $|$ #4 \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0.15in, label={}]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+  \end{itemize}
+}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=0.25in]
+}
+
+\newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{-3pt}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{0.95}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Pablo Leyva} \\ \vspace{1pt}
+    \small
+    \href{mailto:pl33@njit.edu}{\underline{pl33@njit.edu}} $|$
+    908-525-6062 $|$
+    \href{https://linkedin.com/in/pablo-leyva}{\underline{linkedin.com/in/pablo-leyva}} $|$
+    \href{https://pabloleyva.io}{\underline{pabloleyva.io}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \item
+      \textbf{GEM Fellow}\\
+      M.S. Applicant \hfill Expected Fall 2027
+
+    \item
+      \textbf{New Jersey Institute of Technology} \\
+      B.S. Applied Mathematics \& Computer Science \hfill Expected: May 2027
+
+
+
+  \resumeSubHeadingListEnd
+  \vspace{-5pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+      \resumeOneLineHeading
+      {Research Engineer Intern}
+      {Mechanistic Interpretibility Lab \href{https://kieranamurphy.com/}{ \scriptsize\textcolor{gray!90}{\faExternalLink*}} }
+      {Sep 2026 -- Present}
+      {Newark, NJ}
+
+      \vspace{5pt}
+
+      \resumeItemListStart
+      \resumeItem{Advised by Kieran Murphy to build a  \textbf{PyTorch} pipeline classifying all \textbf{144 GPT-2 attention heads} by cross-checking in \textbf{TransformerLens} and \textbf{Hugging Face}  to quantify no-op attention behavior; 74\% default to the BOS sink.}
+      \resumeItem{Re-ran the 3,000 sequences of rare, common and byte-free tokens; 15 heads shifted oppositely in early and late layers.}
+      \resumeItem{Running \textbf{causal experiments} of 1.2M sequences to isolate attention shift.}
+      \resumeItemListEnd
+
+
+      
+    \resumeOneLineHeading
+      {AI/ML Intern}
+      {Apple}
+      {May 2026 -- Aug 2026}
+      {Cupertino, CA}
+
+      \vspace{5pt}
+
+      \resumeItemListStart
+      \resumeItem{Designed agentic-commerce use cases for Siri, using Apple Wallet and Event Passes data as context to anticipate user needs.}
+      \resumeItem{Built a \textbf{multimodal synthesizer} fusing speech and \textbf{On-Screen Awareness} into instruction prompts.}
+      \resumeItem{Proposed a screenless human-computer interface that delegates work to recursive subagents on the user's behalf.}
+      \resumeItemListEnd
+
+
+    \resumeOneLineHeading
+      {Machine Learning Intern}
+      {Angeles Investors}
+      {Jan 2026 -- May 2026}
+      {New York City, NY}
+
+      \vspace{5pt}
+
+
+      \resumeItemListStart
+        \resumeItem{Productized AI \textbf{agent swarm} powered by GPT-4o which led to a \textbf{\$500K pre-seed deal} at a \$48M pre-money valuation.}
+        \resumeItem{Deployed an \textbf{asynchronous FastAPI} data ingestion pipeline via \textbf{Docker} that streamed structured results in real time, accelerating startup screening, due-dilligence and outreach.}
+      \resumeItemListEnd
+  
+
+
+
+    \resumeOneLineHeading
+      {President}
+      {Society of Hispanic Professional Engineers (SHPE)}
+      {Sep 2025 -- May 2026 }
+      {Newark, NJ}
+
+      \vspace{5pt}
+
+      \resumeItemListStart
+        \resumeItem{Led 13 officers fundraising \textbf{\$40,000} across \textbf{90+} events year-round, growing membership to a record \textbf{250+}.}
+        \resumeItem{Architected and shipped the chapter's \textbf{first iOS app} in \textbf{27 days} leading 3 engineers, scaling to \textbf{200+ users} in its \textbf{first month} with event registration, member details, and mentorship-program features.}
+      \resumeItemListEnd
+
+    \resumeOneLineHeading
+      {AI/ML Intern}
+      {Apple}
+      {May 2025 -- Aug 2025}
+      {Cupertino, CA}
+
+      \vspace{5pt}
+
+      \resumeItemListStart
+        \resumeItem{Deployed a \textbf{LangGraph} agent integrating \textbf{RAG} with \textbf{MCP} to reason over technical docs for Apple Pay Merchants.}
+        \resumeItem{Used \textbf{Qdrant} for \textbf{multilingual similarity search} and \textbf{GraphQL} to fetch and manipulate data across internal systems.}
+        \resumeItem{Built \textbf{LLM evaluation pipeline} benchmarking agent trajectories, tool-use success, groundedness, and hallucination rate.}
+      \resumeItemListEnd
+
+       \resumeOneLineHeading
+      {Software Engineering Opeartions Intern}
+      {Caterpillar Inc.}
+      {May 2024 -- Aug 2024}
+      {Chicago, IL}
+
+      \vspace{5pt}
+
+      \resumeItemListStart
+        \resumeItem{Implemented a complete \textbf{ETL workflow} in \textbf{Apache Spark} for Autonomous Vehicle Fleet Management, handling data validation, transformation, and storage in \textbf{PostgreSQL} with a \textbf{CI/CD} pipeline.}
+        \resumeItem{Served end-to-end data pipelines via \textbf{FastAPI} microservices at \textbf{sub-100ms} latency for 10K+ daily requests.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {Evolv $|$ \textnormal{\small \href{https://devpost.com/software/kv-cache-on-this}{\underline{Devpost}}}}{Flask, NumPy, Pandas, Python}
+
+      \vspace{3pt}
+
+
+      \resumeItemListStart
+        \resumeItem{Placed \textbf{1st of 546} teams at HackPrinceton, building an entire backend and predictive modeling system in under 12 hours.}
+        \resumeItem{Built a \textbf{geospatial stochastic simulation} platform to forecast longterm regional impact.}
+        \resumeItem{Productionized a \textbf{real-time Kubernetes pipeline} with LLM-generated reports, end-to-end running under 5 seconds.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+      {Founder - HAI}{Transformers, PyTorch, pgvector, Redis, Docker, FastAPI, LangGraph, Python }
+
+      \vspace{5pt}
+
+      \resumeItemListStart
+        \resumeItem{Commercialized an AI-powered SAT prep platform, selling to NJ tutoring centers supporting \textbf{600 students} concurrently.}
+        \resumeItem{Built \textbf{multimodal} input/output \textbf{pipelines} for PDFs, images, and text, combining \textbf{OCR}, vector search, semantic retrieval, prompt orchestration, and GPT-4o API to produce personalized questions, explanations, and study material.}
+        \resumeItem{Implemented a \textbf{symbolic verifier} for mathemtical reasoning on CoT yielding \textbf{100\%} solution correctness before delivery.}
+      \resumeItemListEnd
+
+
+      \vspace{5pt}
+
+    \resumeProjectHeading
+      {Criteo Uplift: Large-Scale Causal ML $|$ \textnormal{\small \href{https://github.com/pleyva2004/causalml-criteo}{\underline{GitHub}} $|$ \href{https://www.kaggle.com/datasets/arashnic/uplift-modeling}{\underline{Kaggle}}}}{LightGBM, EconML, scikit-learn, statsmodels, Python}
+
+      \vspace{5pt}
+
+      \resumeItemListStart
+        \resumeItem{Trained LR, RF, and \textbf{LightGBM} on \textbf{14M} ad-experiment users (0.29\% conversions): \textbf{PR-AUC 0.226}, 78$\times$ base rate.}
+        \resumeItem{\textbf{X-learner} uplift targeting found \textbf{60\% more} incremental visits than conversion-probability targeting at a 5\% budget.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+      {Scholastic-LLM: On-Device Distillation $|$ \textnormal{\small \href{https://github.com/pleyva2004/scholastic-llm}{\underline{GitHub}} $|$ \href{https://huggingface.co/spaces/pleyva2004/scholastic-llm-demo}{\underline{Hugging Face}}}}{MLX, PEFT, Hugging Face, Python}
+
+      \vspace{3pt}
+
+      \resumeItemListStart
+        \resumeItem{Distilled \textbf{Claude Sonnet 4.6} into an \textbf{8-bit Qwen 2.5 7B} via on-device \textbf{LoRA} in 12.7 GB, lifting task score \textbf{258\%}.}
+        \resumeItem{Built evals over 5 checkpoints; traced \textbf{DPO}'s zero gain to preference saturation; shipped best \textbf{SFT} via \textbf{PEFT}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \footnotesize{\item{
+      \textbf{Languages}{: Python, SQL, C++, JavaScript/TypeScript, Swift} \\
+      \textbf{AI/ML}{: PyTorch, TensorFlow, scikit-learn, XGBoost, LightGBM, Hugging Face Transformers, LangGraph, RAG, MCP, Qdrant} \\
+      \textbf{Systems \& Infrastructure}{: Docker, Git, Kubernetes, PostgreSQL, REST, GraphQL, FastAPI, Apache Spark, CI/CD, NumPy, Pandas}
+    }}
+  \end{itemize}
+
+%-------------------------------------------
+\end{document}
